@@ -1,0 +1,30 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# Forzar HTTPS y eliminar "www"
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^(www\.)?japonkoreabogota\.com$ [NC]
+RewriteRule ^(.*)$ https://japonkoreabogota.com/$1 [L,R=301]
+
+# Forzar HTTPS en recursos internos
+RewriteCond %{HTTP_HOST} ^(www\.)?japonkoreabogota\.com$ [NC]
+RewriteRule .* - [E=UPGRADE]
+<IfModule mod_headers.c>
+    Header always set Content-Security-Policy "upgrade-insecure-requests;" env=UPGRADE
+</IfModule>
+
+# Redirigir tráfico HTTP a HTTPS
+RewriteCond %{HTTP_HOST} japonkoreabogota\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://japonkoreabogota.com/$1 [R,L]
+
+# Redirecciones de carpetas a páginas en la raíz
+RewriteRule ^pag_compras_/?$ /pag_compras_.html [L]
+RewriteRule ^pag_politica_seguridad_y_privacidad/?$ /pag_politica_seguridad_y_privacidad.html [L]
+RewriteRule ^pag_cotizador_en_linea/?$ /pag_cotizador.html [L]
+RewriteRule ^pag_formas_pago_/?$ /pag_formas_pago_.html [L]
+RewriteRule ^pag_promociones_mant/?$ /pag_promociones_mant.html [L]
+RewriteRule ^pag_tienda_mant/?$ /pag_tienda_mant.html [L]
+RewriteRule ^pag_promociones/?$ /pag_promociones.html [L]
+</IfModule>

@@ -1,0 +1,271 @@
+/* ====================================================== */
+/* AUTOPARTES - COLOR CORPORATIVO + IMÁGENES +12%        */
+/* Azul oscuro | Imágenes más grandes                    */
+/* ====================================================== */
+
+/* MISMA FUENTE QUE MEDIOS DE PAGO */
+.seccion-autopartes {
+    padding: 6px 0 4px !important;
+    background: #fff;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 8px !important;
+    padding: 0 12% !important;
+}
+
+.titulo-seccion h2 {
+    font-size: 20px !important;
+    font-weight: 600;
+    color: #1a2a4f !important;
+    margin-bottom: 2px !important;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.titulo-seccion p {
+    font-size: 11px !important;
+    color: #5a6b8a !important;
+    margin-top: 2px !important;
+    margin-bottom: 0 !important;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+/* GRID */
+.grid-fichas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px !important;
+    width: 100%;
+    padding: 0 12% !important;
+    box-sizing: border-box;
+}
+
+/* TARJETA */
+.ficha-autoparte {
+    background: #fff;
+    border-radius: 14px !important;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(26, 42, 79, 0.08);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.ficha-autoparte::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #1a2a4f, #3a5a8f);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.ficha-autoparte:hover::after {
+    transform: scaleX(1);
+}
+
+.ficha-autoparte:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(26, 42, 79, 0.1);
+}
+
+/* CONTENIDO */
+.ficha-contenido {
+    padding: 12px 10px 14px !important;
+    text-align: center !important;
+}
+
+/* TÍTULOS - COLOR CORPORATIVO */
+.ficha-categoria { 
+    font-size: 17px !important; 
+    font-weight: 700 !important; 
+    color: #1a2a4f !important; 
+    text-align: center !important; 
+    margin: 0 auto 14px auto !important; 
+    padding: 0 0 8px 0 !important; 
+    display: block !important; 
+    width: 100% !important; 
+    letter-spacing: -0.2px !important; 
+    position: relative !important;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+/* Línea decorativa centrada */
+.ficha-categoria:after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 35px !important;
+    height: 2px !important;
+    background: linear-gradient(90deg, #1a2a4f, #3a5a8f) !important;
+    border-radius: 2px !important;
+    opacity: 0.35 !important;
+    transition: all 0.35s ease !important;
+}
+
+.ficha-autoparte:hover .ficha-categoria {
+    color: #3a5a8f !important;
+}
+
+.ficha-autoparte:hover .ficha-categoria:after {
+    opacity: 1 !important;
+    width: 55px !important;
+}
+
+/* ========== IMAGEN - AUMENTADA 12% ========== */
+/* Tamaño anterior: 130px → +12% = 145.6px */
+.ficha-imagen {
+    margin: 8px 0 8px !important;
+    min-height: 132px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.ficha-imagen img {
+    max-width: 146px !important;
+    width: auto !important;
+    height: auto !important;
+    transition: transform 0.3s ease !important;
+    object-fit: contain !important;
+}
+
+.ficha-autoparte:hover .ficha-imagen img {
+    transform: scale(1.05) !important;
+}
+
+/* DESCRIPCIÓN - SOLO CON HOVER */
+.ficha-descripcion { 
+    font-size: 10px !important; 
+    line-height: 1.5 !important; 
+    color: #1a2a4f !important; 
+    margin: 8px 0 12px !important; 
+    font-weight: 500 !important; 
+    text-align: center !important; 
+    padding: 0 6px !important; 
+    font-family: 'Open Sans', sans-serif !important;
+    
+    opacity: 0 !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    transition: all 0.35s cubic-bezier(0.2, 0.9, 0.4, 1.1) !important;
+    transform: translateY(-5px) !important;
+    pointer-events: none !important;
+}
+
+.ficha-autoparte:hover .ficha-descripcion { 
+    opacity: 1 !important;
+    max-height: 80px !important;
+    transform: translateY(0) !important;
+    color: #3a5a8f !important;
+}
+
+/* BOTÓN */
+.ficha-boton-cotizar { 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 3px; 
+    padding: 5px 14px !important; 
+    background: transparent; 
+    border: 1px solid #c5cfdf; 
+    color: #1a2a4f !important; 
+    border-radius: 30px; 
+    font-size: 9.5px !important; 
+    font-weight: 600 !important; 
+    text-decoration: none; 
+    transition: all 0.2s ease;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.ficha-boton-cotizar i { 
+    font-size: 8px; 
+    transition: transform 0.2s ease; 
+    color: #1a2a4f;
+}
+
+.ficha-autoparte:hover .ficha-boton-cotizar { 
+    border-color: #1a2a4f; 
+    background: #1a2a4f; 
+    color: #fff !important; 
+    transform: translateX(2px); 
+}
+
+.ficha-autoparte:hover .ficha-boton-cotizar i { 
+    color: #fff;
+    transform: translateX(2px); 
+}
+
+/* ========== RESPONSIVE ========== */
+@media (min-width: 1400px) {
+    .ficha-categoria { font-size: 19px !important; margin-bottom: 16px !important; }
+    .ficha-imagen { min-height: 148px !important; }
+    .ficha-imagen img { max-width: 165px !important; }
+    .ficha-descripcion { font-size: 11px !important; }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .ficha-categoria { font-size: 18px !important; margin-bottom: 14px !important; }
+    .ficha-imagen { min-height: 139px !important; }
+    .ficha-imagen img { max-width: 155px !important; }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .grid-fichas { gap: 8px !important; padding: 0 10% !important; }
+    .ficha-categoria { font-size: 16px !important; margin-bottom: 12px !important; }
+    .ficha-imagen { min-height: 129px !important; }
+    .ficha-imagen img { max-width: 140px !important; }
+    .ficha-descripcion { font-size: 9.5px !important; }
+}
+
+@media (max-width: 991px) {
+    .grid-fichas { grid-template-columns: repeat(2, 1fr); gap: 12px !important; padding: 0 8% !important; }
+    .ficha-categoria { font-size: 17px !important; margin-bottom: 14px !important; }
+    .ficha-imagen { min-height: 140px !important; }
+    .ficha-imagen img { max-width: 151px !important; }
+    .ficha-descripcion { font-size: 10.5px !important; }
+}
+
+@media (max-width: 767px) {
+    .grid-fichas { grid-template-columns: 1fr; gap: 12px !important; padding: 0 6% !important; }
+    .ficha-categoria { font-size: 19px !important; margin-bottom: 16px !important; }
+    .ficha-imagen { min-height: 151px !important; }
+    .ficha-imagen img { max-width: 162px !important; }
+    .ficha-descripcion { font-size: 11px !important; }
+}
+
+/* ANIMACIÓN DE ENTRADA */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.ficha-autoparte {
+    animation: fadeInUp 0.4s ease forwards;
+    opacity: 0;
+}
+
+.ficha-autoparte:nth-child(1) { animation-delay: 0.04s; }
+.ficha-autoparte:nth-child(2) { animation-delay: 0.08s; }
+.ficha-autoparte:nth-child(3) { animation-delay: 0.12s; }
+.ficha-autoparte:nth-child(4) { animation-delay: 0.16s; }
+.ficha-autoparte:nth-child(5) { animation-delay: 0.20s; }
+.ficha-autoparte:nth-child(6) { animation-delay: 0.24s; }
+
+/* AJUSTE ESPECÍFICO PARA IMAGEN DE CARROCERÍA - 24% MÁS GRANDE */
+.ficha-autoparte:nth-child(3) .ficha-imagen img {
+    max-width: 181px !important;
+    transform: scale(1.02) !important;
+}
+
+.ficha-autoparte:nth-child(3):hover .ficha-imagen img {
+    transform: scale(1.1) !important;
+}

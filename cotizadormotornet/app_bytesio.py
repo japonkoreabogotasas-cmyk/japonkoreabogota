@@ -1,0 +1,151 @@
+import os
+import logging
+from flask import Flask, render_template, request, redirect, url_for, flash, send_file, session
+from datetime import datetime
+import traceback
+from utils.pdf_generator_bytesio import generate_pdf_to_bytesio
+
+# Configure logging
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
+# Create the app
+app = Flask(__name__)
+app.secret_key = os.environ.get("SESSION_SECRET", "dev_secret_key")
+
+# Generate a company logo path that works in both development and production
+def get_logo_path():
+    # Usar ruta absoluta para asegurar que se encuentra el logo
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    logo_path = os.path.join(base_dir, "static", "img", "motornet_logo.png")
+    
+    # Verificar que el archivo existe
+    if not os.path.exists(logo_path):
+        # Intentar con el otro logo como respaldo
+        logo_path = os.path.join(base_dir, "static", "img", "logo.png")
+    
+    return logo_path
+
+@app.route('/')
+def index():
+    return redirect(url_for('quotation_form'))
+
+@app.route('/cotizador', methods=['GET', 'POST'])
+def quotation_form():
+    if request.method == 'POST':
+        try:
+            # Get form data
+            customer_name = request.form.get('customer_name', '')
+            customer_document = request.form.get('customer_document', '')
+            customer_email = request.form.get('customer_email', '')
+            customer_phone = request.form.get('customer_phone', '')
+            salesperson = request.form.get('salesperson', '')
+            observations = request.form.get('observations', '')
+            
+            # Get product data
+            products = []
+            product_names = request.form.getlist('product_name[]')
+            product_quantities = request.form.getlist('product_quantity[]')
+            product_prices = request.form.getlist('product_price[]')
+            
+            for i in range(len(product_names)):
+                if product_names[i].strip():  # Only add non-empty products
+                    products.append({
+                        'name': product_names[i],
+                        'quantity': int(product_quantities[i]) if product_quantities[i] else 0,
+                        'price': float(product_prices[i]) if product_prices[i] else 0,
+                        'total': int(product_quantities[i]) * float(product_prices[i]) if product_quantities[i] and product_prices[i] else 0
+                    })
+            
+            # Calculate totals
+            subtotal = sum(product['total'] for product in products)
+            tax = subtotal * 0.19  # 19% tax
+            total = subtotal + tax
+            
+            # Store data in session for PDF generation
+            session['quotation_data'] = {
+                'customer': {
+                    'name': customer_name,
+                    'document': customer_document,
+                    'email': customer_email,
+                    'phone': customer_phone
+                },
+                'salesperson': salesperson,
+                'observations': observations,
+                'products': products,
+                'totals': {
+                    'subtotal': subtotal,
+                    'tax': tax,
+                    'total': total
+                },
+                'date': datetime.now().strftime('%Y-%m-%d'),
+                'quotation_number': datetime.now().strftime('%Y%m%d%H%M%S')
+            }
+            
+            logger.debug("Form data processed successfully")
+            flash('Cotización creada correctamente', 'success')
+            return redirect(url_for('generate_quotation_pdf'))
+            
+        except Exception as e:
+            logger.error(f"Error processing form data: {str(e)}")
+            logger.error(traceback.format_exc())
+            flash(f'Error al procesar el formulario: {str(e)}', 'danger')
+            return render_template('quotation.html')
+    
+    return render_template('quotation.html')
+
+@app.route('/generar-pdf')
+def generate_quotation_pdf():
+    try:
+        # Get data from session
+        quotation_data = session.get('quotation_data')
+        if not quotation_data:
+            flash('No hay datos para generar la cotización', 'warning')
+            return redirect(url_for('quotation_form'))
+        
+        # Get logo path
+        logo_path = get_logo_path()
+        logger.debug(f"Logo path: {logo_path}")
+        
+        # Generate PDF to BytesIO buffer
+        pdf_buffer = generate_pdf_to_bytesio(quotation_data, logo_path)
+        
+        logger.debug(f"PDF generated successfully to BytesIO buffer")
+        
+        # Set a descriptive filename for the download
+        download_name = f"Cotizacion_{quotation_data['quotation_number']}.pdf"
+        
+        # Send the file with proper MIME type and as_attachment=True
+        response = send_file(
+            pdf_buffer,
+            mimetype='application/pdf',
+            as_attachment=True,
+            download_name=download_name
+        )
+        
+        # Add headers to avoid caching issues
+        response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+        response.headers["Pragma"] = "no-cache"
+        response.headers["Expires"] = "0"
+        
+        return response
+        
+    except Exception as e:
+        logger.error(f"Error generating PDF: {str(e)}")
+        logger.error(traceback.format_exc())
+        flash(f'Error al generar el PDF: {str(e)}', 'danger')
+        return redirect(url_for('quotation_form'))
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('error.html', error="Página no encontrada"), 404
+
+@app.errorhandler(500)
+def server_error(e):
+    return render_template('error.html', error="Error interno del servidor"), 500
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)

@@ -1,0 +1,101 @@
+/* ====================================================== */
+/* AUTOPARTES - VERSIÓN MINIMAL PROFESIONAL              */
+/* Compacto | Elegante | 100% Responsive                 */
+/* ====================================================== */
+
+/* BASE - COMPACTA */
+.seccion-autopartes{ padding: 6px 0 4px!important; background:#fff; width:100%;}
+.titulo-seccion{ text-align:center; margin-bottom: 8px!important; padding:0 12%!important;}
+.titulo-seccion h2{ font-size:20px!important; font-weight:600; color:#1a1a1a; margin-bottom:2px!important;}
+.titulo-seccion p{ font-size:11px!important; color:#888; margin-top:2px!important; margin-bottom:0!important;}
+
+/* GRID - ESPACIADO JUSTO */
+.grid-fichas{ display:grid; grid-template-columns:repeat(3,1fr); gap:10px!important; width:100%; padding:0 12%!important; box-sizing:border-box;}
+
+/* TARJETA - ELEGANTE */
+.ficha-autoparte{ background:#fff; border-radius:14px!important; transition:all 0.3s ease; border:1px solid rgba(0,0,0,0.04); cursor:pointer; position:relative; overflow:hidden;}
+.ficha-autoparte::after{ content:''; position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(90deg,#a40f00,#ffb000); transform:scaleX(0); transition:transform 0.3s ease;}
+.ficha-autoparte:hover::after{ transform:scaleX(1);}
+.ficha-autoparte:hover{ transform:translateY(-3px); box-shadow:0 10px 20px rgba(164,15,0,0.08);}
+
+/* CONTENIDO - MINIMAL */
+.ficha-contenido{ padding:8px 8px 10px!important; text-align:center; position:relative; z-index:1;}
+
+/* ICONO - DISCRETO */
+.ficha-icono{ width:30px!important; height:30px!important; margin:0 auto 4px!important; background:#f5f5f5; border-radius:50%; display:flex; align-items:center; justify-content:center; transition:all 0.25s ease;}
+.ficha-icono i{ font-size:14px!important; color:#a40f00;}
+.ficha-autoparte:hover .ficha-icono{ background:#a40f00; transform:scale(1.03);}
+.ficha-autoparte:hover .ficha-icono i{ color:#fff;}
+
+/* CATEGORÍA - SOBRIA */
+.ficha-categoria{ font-size:16px!important; font-weight:600; color:#1a1a1a; margin-bottom:3px!important; transition:color 0.2s ease; letter-spacing:-0.2px;}
+.ficha-autoparte:hover .ficha-categoria{ color:#a40f00;}
+
+/* IMAGEN - GRANDE Y EQUILIBRADA */
+.ficha-imagen{ margin:4px 0 4px!important; min-height:118px!important; display:flex!important; align-items:center!important; justify-content:center!important;}
+.ficha-imagen img{ max-width:130px!important; width:auto!important; height:auto!important; transition:transform 0.3s ease!important;}
+.ficha-autoparte:hover .ficha-imagen img{ transform:scale(1.05)!important;}
+
+/* DESCRIPCIÓN - CLARA Y JUSTIFICADA */
+.ficha-descripcion{ font-size:10px!important; line-height:1.35!important; color:#666; margin:4px 0 8px!important; font-weight:400; text-align:justify!important; padding:0 6px; transition:color 0.2s ease;}
+.ficha-autoparte:hover .ficha-descripcion{ color:#333;}
+
+/* BOTÓN - MINIMAL */
+.ficha-boton-cotizar{ display:inline-flex; align-items:center; gap:3px; padding:4px 12px!important; background:transparent; border:1px solid #e5e5e5; color:#a40f00; border-radius:30px; font-size:9px!important; font-weight:500; text-decoration:none; transition:all 0.2s ease;}
+.ficha-boton-cotizar i{ font-size:8px; transition:transform 0.2s ease;}
+.ficha-autoparte:hover .ficha-boton-cotizar{ border-color:#a40f00; background:#a40f00; color:#fff; transform:translateX(1px);}
+.ficha-autoparte:hover .ficha-boton-cotizar i{ transform:translateX(2px);}
+
+/* ========== RESPONSIVE PERFECTO ========== */
+
+/* Pantallas grandes */
+@media (min-width:1400px){
+ .ficha-imagen{ min-height:132px!important;}
+ .ficha-imagen img{ max-width:148px!important;}
+ .ficha-categoria{ font-size:18px!important;}
+ .ficha-descripcion{ font-size:11px!important; line-height:1.4!important;}
+}
+
+/* Portátiles estándar */
+@media (min-width:1200px) and (max-width:1399px){
+ .ficha-imagen{ min-height:124px!important;}
+ .ficha-imagen img{ max-width:138px!important;}
+ .ficha-categoria{ font-size:17px!important;}
+}
+
+/* Portátiles pequeños */
+@media (max-width:1199px) and (min-width:992px){
+ .grid-fichas{ gap:8px!important; padding:0 10%!important;}
+ .ficha-imagen{ min-height:115px!important;}
+ .ficha-imagen img{ max-width:125px!important;}
+ .ficha-categoria{ font-size:16px!important;}
+ .ficha-descripcion{ font-size:9.5px!important;}
+}
+
+/* Tablets - 2 columnas */
+@media (max-width:991px){
+ .grid-fichas{ grid-template-columns:repeat(2,1fr); gap:12px!important; padding:0 8%!important;}
+ .ficha-imagen{ min-height:125px!important;}
+ .ficha-imagen img{ max-width:135px!important;}
+ .ficha-categoria{ font-size:17px!important;}
+ .ficha-descripcion{ font-size:10.5px!important;}
+}
+
+/* Móviles - 1 columna */
+@media (max-width:767px){
+ .grid-fichas{ grid-template-columns:1fr; gap:12px!important; padding:0 6%!important;}
+ .ficha-imagen{ min-height:135px!important;}
+ .ficha-imagen img{ max-width:145px!important;}
+ .ficha-categoria{ font-size:19px!important;}
+ .ficha-descripcion{ font-size:11px!important;}
+}
+
+/* ANIMACIÓN DE ENTRADA */
+@keyframes fadeInUp{ 0%{ opacity:0; transform:translateY(10px);} 100%{ opacity:1; transform:translateY(0);}}
+.ficha-autoparte{ animation:fadeInUp 0.4s ease forwards; opacity:0;}
+.ficha-autoparte:nth-child(1){ animation-delay:0.04s;}
+.ficha-autoparte:nth-child(2){ animation-delay:0.08s;}
+.ficha-autoparte:nth-child(3){ animation-delay:0.12s;}
+.ficha-autoparte:nth-child(4){ animation-delay:0.16s;}
+.ficha-autoparte:nth-child(5){ animation-delay:0.20s;}
+.ficha-autoparte:nth-child(6){ animation-delay:0.24s;}

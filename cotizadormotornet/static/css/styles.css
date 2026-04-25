@@ -1,0 +1,54 @@
+/* Custom styles for the quotation application */
+
+.product-row {
+    transition: all 0.3s ease;
+}
+
+.product-row:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+/* Ensure the form elements are properly spaced */
+label {
+    margin-bottom: 0.5rem;
+}
+
+/* Make sure buttons have proper spacing */
+.btn {
+    margin-right: 5px;
+}
+
+/* Ensure the remove button aligns with inputs */
+.remove-product {
+    margin-bottom: 0.5rem;
+}
+
+/* Custom styling for the totals section */
+.card-footer {
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 1rem;
+}
+
+.card-footer strong {
+    font-size: 1.1rem;
+}
+
+/* Add some spacing to the total values */
+#subtotal, #tax, #total {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#total {
+    font-weight: 700;
+    font-size: 1.2rem;
+}

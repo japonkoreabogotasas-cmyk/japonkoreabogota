@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cotizaciones - Motornet</title>
+    <!-- Usa el Bootstrap estándar en lugar del tema de Replit -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: white;
+            color: #333;
+        }
+        
+        /* Estilo para las tarjetas */
+        .card {
+            background-color: white;
+            border-color: #ddd;
+        }
+        
+        .card-header {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        /* Estilo para los campos de entrada */
+        .form-control, .form-select {
+            background-color: #f8f9fa;
+            border: 1px solid #ced4da;
+            color: #333;
+        }
+        
+        .form-control:focus, .form-select:focus {
+            background-color: #fff;
+            border-color: #86b7fe;
+            box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+        }
+        
+        /* Estilo para las tablas */
+        .table {
+            background-color: white;
+            color: #333;
+        }
+        
+        .table thead th {
+            background-color: #f8f9fa;
+        }
+        
+        /* Estilo para los botones */
+        .btn-primary {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+        }
+        
+        .btn-success {
+            background-color: #198754;
+            border-color: #198754;
+        }
+        
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+        
+        /* Para el contenedor del logo */
+        .logo-container {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .logo-container img {
+            max-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <div class="logo-container">
+                    <img src="{{ url_for('static', filename='img/motornet_logo.png') }}" alt="Motornet Logo">
+                </div>
+                <h2>Sistema de Cotizaciones</h2>
+            </div>
+        </div>
+        
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+        <form id="quotationForm" method="POST" action="{{ url_for('quotation_form') }}">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5>Información del Cliente</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="customer_name" class="form-label">Nombre del cliente</label>
+                            <input type="text" class="form-control" id="customer_name" name="customer_name" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="customer_document" class="form-label">CC/NIT</label>
+                            <input type="text" class="form-control" id="customer_document" name="customer_document">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label for="customer_email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="customer_email" name="customer_email">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="customer_phone" class="form-label">Número de contacto</label>
+                            <input type="tel" class="form-control" id="customer_phone" name="customer_phone">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="salesperson" class="form-label">Vendedor</label>
+                            <select class="form-select" id="salesperson" name="salesperson" required>
+                                <option value="">Seleccione un vendedor</option>
+                                <option value="Maicol Aranda">Maicol Aranda</option>
+                                <option value="Cristian Aranda">Cristian Aranda</option>
+                                <option value="Sebastian Rodriguez">Sebastian Rodriguez</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5>Artículos</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="product_name_input" class="form-label">Nombre del artículo</label>
+                            <input type="text" class="form-control" id="product_name_input">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="product_price_input" class="form-label">Precio (con IVA)</label>
+                            <input type="number" class="form-control" id="product_price_input" min="0.01" step="0.01">
+                        </div>
+                        <div class="col-md-2">
+                            <label for="product_quantity_input" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="product_quantity_input" min="1" value="1">
+                        </div>
+                        <div class="col-md-1 d-flex align-items-end">
+                            <button type="button" class="btn btn-primary" id="addProduct">
+                                <span data-feather="plus"></span> Agregar
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Artículo</th>
+                                    <th class="text-center">Cant.</th>
+                                    <th class="text-end">Precio Unit.</th>
+                                    <th class="text-center">IVA</th>
+                                    <th class="text-end">Total</th>
+                                    <th class="text-center">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="productsContainer">
+                                <!-- Los productos se agregarán aquí dinámicamente mediante JavaScript -->
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4" class="text-end"><strong>Total:</strong></td>
+                                    <td class="text-end"><strong id="total">$0.00</strong></td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+                    <!-- Campos ocultos para enviar al servidor -->
+                    <div id="hidden-products-container">
+                        <!-- Aquí se agregarán los campos ocultos -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5>Observaciones</h5>
+                </div>
+                <div class="card-body">
+                    <textarea class="form-control" name="observations" id="observations" rows="3" placeholder="Agregue cualquier nota o comentario adicional"></textarea>
+                </div>
+            </div>
+            
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" class="btn btn-success">
+                    <i data-feather="file-text"></i> Generar PDF
+                </button>
+                <button type="reset" class="btn btn-danger ms-2">
+                    <i data-feather="trash-2"></i> Limpiar Lista
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="mt-5 mb-3 text-center text-muted">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center align-items-center">
+                <span class="me-3">
+                    <i data-feather="globe" class="text-primary me-1"></i> www.motornet.shop
+                </span>
+                <span class="me-3">
+                    <i data-feather="phone" class="text-primary me-1"></i> +57 123 456 7890
+                </span>
+                <span>
+                    <i data-feather="mail" class="text-primary me-1"></i> contacto@motornet.shop
+                </span>
+                <span class="ms-3">
+                    <i data-feather="map-pin" class="text-primary me-1"></i> Bogotá, Colombia
+                </span>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        // Inicializar los íconos de Feather
+        document.addEventListener('DOMContentLoaded', function() {
+            feather.replace();
+        });
+    </script>
+    <script src="{{ url_for('static', filename='js/script_new.js') }}"></script>
+</body>
+</html>

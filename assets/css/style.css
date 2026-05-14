@@ -6,8 +6,22 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  background:  rgba(255, 255, 255,);
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #faf6ff 6%,
+    #f5f0ff 14%,
+    #fef7f0 22%,
+    #fffdf5 32%,
+    #faf6ff 44%,
+    #f5f0ff 56%,
+    #fef7f0 68%,
+    #ffffff 80%,
+    #ffffff 100%
+  );
+  overflow-x: hidden;
 }
+
 
 a {
    color:rgba(164, 15, 0);
@@ -67,7 +81,7 @@ html {
   width: 70%; /* Ancho por defecto en pantallas grandes */
   padding-bottom: 8.3%;
   padding-top: 5%;
-  background: #ffffff; /* Fondo base */
+  background: transparent;
 }
 
 .fondoautopartes1::before {
@@ -415,6 +429,8 @@ nav li:hover {
 
 /* Contenedor principal */
 .durae-container {
+  position: relative;
+  z-index: 1;
   width: 70%;
   margin: 0 auto;
 }
@@ -632,9 +648,12 @@ nav li:hover {
 #banner_pagos {
   position: relative;
   width: 100%;
+  background: transparent;
 }
 
 .banner_pagos_container {
+  position: relative;
+  z-index: 1;
   width: 70%;
   margin: 0 auto;
 }
@@ -1020,12 +1039,16 @@ nav li:hover {
 }
 
 .icon-bar a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 46px;
   text-align: center;
-  padding: 8px;
+  padding: 0;
   transition: all 0.3s ease;
   color: white;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .icon-bar a:hover {
@@ -1038,7 +1061,7 @@ nav li:hover {
 }
 
 .whatsapp {
-  background: #5CFF7A;
+  background: #25D366;
   color: white;
 }
 

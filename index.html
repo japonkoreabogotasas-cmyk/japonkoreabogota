@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
@@ -16,7 +16,7 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap(no-borrar).min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -53,16 +53,16 @@
       ]
     }
     </script>
-  <link href="assets/css/fichas-modernas.css?v=1775680200" rel="stylesheet">
+  <link href="assets/css/fichas-modernas.css?v=1775680202" rel="stylesheet">
   <link href="assets/css/equipo-unico.css" rel="stylesheet">
 </head>
 <body>
  <!-- ======= Botones sociales JK inicio ======= -->
   <div class="icon-bar">
-    <a href="https://wa.me/573132152330" target="_blank" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=61572761262938" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-    <a href="https://www.instagram.com/japonkorea7deagosto/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
-    <a href="tel:+573132152330" target="_blank" class="phone"><i class="fa fa-phone"></i></a>
+    <a href="https://wa.me/573132152330" target="_blank" class="whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61572761262938" target="_blank" class="facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/japonkorea7deagosto/" target="_blank" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="tel:+573132152330" target="_blank" class="phone" aria-label="Llamar"><i class="fas fa-phone"></i></a>
   </div>
   <!-- ======= Botones sociales JK Fin ======= -->
   <!-- ======= Header Japon Korea (Contiene logos superiores y menú de navegación) Inicio=======-->
@@ -73,8 +73,8 @@
       <nav >
         <ul class="jk2025_menu">
           <li><a href="#autopartes" class="scroll-link-productos">Productos</a></li>
+          <li><a href="#banner_pagos" class="scroll-link-pagos">Pagos</a></li>
           <li><a href="#payment_steps" class="scroll-link-compras">Compras</a></li>
-          <li><a href="#banner_pagos" class="scroll-linkpagos">Pagos</a></li>
           <li><a href="#contactjkid" >Contáctanos</a></li>
           <li><a href="https://japonkoreabogota.com/pag_promociones_mant">Promociones</a></li>
           <li><a href="https://japonkoreabogota.com/pag_tienda_mant">Compra en linea</a></li>
@@ -91,7 +91,7 @@
 </div>
    <!-- ======= Header Japon Korea (Contiene logos superiores y menú de navegación) Fin ======= -->
    <!-- ======= Deslizados JK Inicio ======= -->
-   <div class="video-banner">
+   <div class="video-banner jkb-video-hero">
     <video autoplay muted loop playsinline>
       <source src="ruta-al-video.mp4" type="video/mp4">
       Tu navegador no soporta la reproducción de videos.
@@ -99,215 +99,21 @@
   </div>
  <!-- ======= Deslizados JK Fin ======= -->
 
- <!-- ======= SECCIÓN AUTOPARTES JKB - ALINEACIÓN DE PRECISIÓN (SINCRONIZACIÓN & SUSPENSIÓN -6% TOTAL) ======= -->
- <style>
-   /*
-      JKB PRECISION ALIGNMENT DESIGN (12% Top Margin)
-      Sincronización y Suspensión desplazadas un 3% extra adicional (12% total).
-      Motor, Carrocería, Lubricación y Refrigeración al 6% superior.
-   */
+  <!-- ======= SECCIÓN AUTOPARTES JKB - ALINEACIÓN DE PRECISIÓN (SINCRONIZACIÓN & SUSPENSIÓN -6% TOTAL) ======= -->
+  <link href="assets/css/autopartes.css" rel="stylesheet">
 
-   .seccion-autopartes-compact {
-     background-color: #ffffff;
-     padding: 1vh 0;
-     font-family: 'Inter', sans-serif;
-     height: calc(100vh - 80px);
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     box-sizing: border-box;
-     overflow: hidden;
-     margin-top: 80px;
-   }
+  <!-- Contenedor unificado: fondo continuo para los 4 componentes -->
+  <div class="jkb-content-unified">
 
-   .grid-fichas-compact {
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     grid-template-rows: repeat(2, 38vh);
-     gap: 10px 15px;
-     max-width: 1350px;
-     margin: 0 auto;
-     padding: 0 15px;
-     width: 100%;
-     box-sizing: border-box;
-   }
-
-   .ficha-compact {
-     background: #ffffff;
-     border-radius: 12px;
-     border: 1px solid #f0f0f0;
-     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-     display: flex;
-     flex-direction: column;
-     position: relative;
-     overflow: hidden;
-     padding: 10px;
-     justify-content: flex-end;
-     align-items: center;
-     box-sizing: border-box;
-     height: 100%;
-     cursor: pointer;
-   }
-
-   .ficha-compact:hover {
-     transform: translateY(-4px);
-     border-color: #1a2a4f;
-     box-shadow: 0 12px 30px rgba(26, 42, 79, 0.08);
-   }
-
-   .ficha-contenido-compact {
-     text-align: center;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: flex-end;
-     width: 100%;
-     position: relative;
-     z-index: 20 !important;
-     pointer-events: none;
-     padding-bottom: 5px;
-   }
-
-   .ficha-categoria-compact {
-     font-size: clamp(0.95rem, 1.8vh, 1.15rem);
-     font-weight: 700;
-     color: #1a2a4f;
-     margin: 0 0 4px 0;
-     text-transform: capitalize;
-     pointer-events: auto;
-     text-shadow: 0 0 8px rgba(255,255,255,0.9);
-   }
-
-   .ficha-imagen-compact {
-     position: absolute;
-     top: 6%;
-     left: 50%;
-     transform: translateX(-50%);
-     width: 100%;
-     height: auto;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     z-index: 1 !important;
-     transition: all 0.4s ease;
-   }
-
-   /* AJUSTE DE PRECISIÓN: SINCRONIZACIÓN Y SUSPENSIÓN AL 12% SUPERIOR (Otro 3% más abajo) */
-   .ficha-sincronizacion .ficha-imagen-compact,
-   .ficha-suspension .ficha-imagen-compact {
-     top: 12%;
-   }
-
-   .ficha-imagen-compact img {
-     max-width: 158px;
-     max-height: 26vh;
-     width: auto;
-     height: auto;
-     object-fit: contain;
-     filter: drop-shadow(0 4px 12px rgba(0,0,0,0.06));
-     transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-   }
-
-   .ficha-carroceria .ficha-imagen-compact img,
-   .ficha-refrigeracion .ficha-imagen-compact img {
-     max-width: 182px;
-     max-height: 28vh;
-   }
-
-   .ficha-motor .ficha-imagen-compact img {
-     max-width: 271px;
-     max-height: 34vh;
-     margin-top: -6%;
-   }
-
-   .ficha-compact:hover .ficha-imagen-compact img {
-     transform: scale(1.06);
-   }
-
-   .ficha-descripcion-compact {
-     font-size: clamp(0.7rem, 1.2vh, 0.78rem);
-     color: #333;
-     font-weight: 500;
-     line-height: 1.15;
-     max-height: 0;
-     opacity: 0;
-     overflow: hidden;
-     transition: all 0.4s ease;
-     margin: 0 0 1px 0 !important;
-     padding: 0 5px;
-     pointer-events: auto;
-     text-shadow: 0 0 10px rgba(255,255,255,1);
-   }
-
-   .ficha-compact:hover .ficha-descripcion-compact {
-     max-height: 7vh;
-     opacity: 1;
-   }
-
-   .btn-wa-compact {
-        background: #1a2a4f;
-        color: #ffffff !important;
-        padding: 6px 18px;
-        border-radius: 30px;
-        text-decoration: none;
-        font-weight: 700;
-        font-size: 0.8rem;
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        opacity: 0;
-        transform: translateY(5px) scale(1.05);
-        transition: all 0.3s ease;
-        pointer-events: auto;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        margin-top: 0;
-   }
-
-   .ficha-compact:hover .btn-wa-compact {
-        opacity: 1;
-        transform: translateY(0);
-        background: #25D366;
-        margin-top: calc(5px + 6%) !important;
-   }
-
-   @media (max-width: 992px) {
-     .seccion-autopartes-compact {
-       height: auto;
-       overflow: visible;
-       padding: 30px 0;
-       margin-top: 0;
-     }
-     .grid-fichas-compact {
-       grid-template-columns: repeat(2, 1fr);
-       grid-template-rows: auto;
-       height: auto;
-       gap: 15px;
-     }
-     .ficha-compact {
-       height: 320px;
-       padding: 20px;
-       justify-content: center;
-     }
-     .ficha-contenido-compact { justify-content: center; }
-     .ficha-imagen-compact {
-       position: relative;
-       top: 0 !important;
-       left: 0;
-       transform: none;
-       height: 180px;
-     }
-     .ficha-imagen-compact img { max-height: 160px; max-width: 150px; }
-     .ficha-motor .ficha-imagen-compact img { max-width: 180px; }
-     .ficha-descripcion-compact { max-height: none; opacity: 1; margin: 8px 0 !important; }
-     .btn-wa-compact { opacity: 1; transform: translateY(0); margin-top: 5px; }
-   }
-
-   @media (max-width: 650px) {
-     .grid-fichas-compact { grid-template-columns: 1fr; }
-   }
- </style>
-
- <div class="seccion-autopartes-compact">
+  <section id="autopartes" class="seccion-autopartes-compact">
+   <div class="autopartes-header-compact">
+     <h2>Nuestros Productos</h2>
+     <div class="autopartes-contacto-compact" aria-label="Contacto de productos">
+       <span>312 530 1564</span>
+       <a href="tel:+573125301564">Llamar</a>
+       <a href="https://wa.me/573132152330" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+     </div>
+   </div>
    <div class="grid-fichas-compact">
 
      <div class="ficha-compact ficha-sincronizacion">
@@ -318,7 +124,9 @@
          <h3 class="ficha-categoria-compact">Sincronización</h3>
          <p class="ficha-descripcion-compact">Filtros, correas, tensores, bujías, instalaciones de alta, kits de distribución.</p>
          <a href="https://wa.me/573116391483" target="_blank" class="btn-wa-compact">
-           <i class="fab fa-whatsapp"></i> 311 639 1483
+           <i class="fas fa-phone-alt" aria-hidden="true"></i>
+           <span>311 639 1483</span>
+           <i class="fab fa-whatsapp" aria-hidden="true"></i>
          </a>
        </div>
      </div>
@@ -330,8 +138,10 @@
        <div class="ficha-contenido-compact">
          <h3 class="ficha-categoria-compact">Motor</h3>
          <p class="ficha-descripcion-compact">Pistones, anillos, válvulas, casquetería, bielas, camisas, bombas de agua, culatas.</p>
-         <a href="https://wa.me/573116391483" target="_blank" class="btn-wa-compact">
-           <i class="fab fa-whatsapp"></i> 311 639 1483
+         <a href="https://wa.me/573132152330" target="_blank" class="btn-wa-compact">
+           <i class="fas fa-phone-alt" aria-hidden="true"></i>
+           <span>311 639 1483</span>
+           <i class="fab fa-whatsapp" aria-hidden="true"></i>
          </a>
        </div>
      </div>
@@ -343,8 +153,10 @@
        <div class="ficha-contenido-compact">
          <h3 class="ficha-categoria-compact">Suspensión</h3>
          <p class="ficha-descripcion-compact">Terminales de dirección, brazos axiales, muñecos, rótulas de tijera, amortiguadores.</p>
-         <a href="https://wa.me/573116391483" target="_blank" class="btn-wa-compact">
-           <i class="fab fa-whatsapp"></i> 311 639 1483
+         <a href="https://wa.me/573132152330" target="_blank" class="btn-wa-compact">
+           <i class="fas fa-phone-alt" aria-hidden="true"></i>
+           <span>311 639 1483</span>
+           <i class="fab fa-whatsapp" aria-hidden="true"></i>
          </a>
        </div>
      </div>
@@ -357,7 +169,9 @@
          <h3 class="ficha-categoria-compact">Lubricación</h3>
          <p class="ficha-descripcion-compact">Pastillas, bandas, discos, campanas, bombas de freno, mordazas, cilindros.</p>
          <a href="https://wa.me/573116391483" target="_blank" class="btn-wa-compact">
-           <i class="fab fa-whatsapp"></i> 311 639 1483
+           <i class="fas fa-phone-alt" aria-hidden="true"></i>
+           <span>311 639 1483</span>
+           <i class="fab fa-whatsapp" aria-hidden="true"></i>
          </a>
        </div>
      </div>
@@ -369,8 +183,10 @@
        <div class="ficha-contenido-compact">
          <h3 class="ficha-categoria-compact">Carrocería</h3>
          <p class="ficha-descripcion-compact">Capot, costados, puertas, bumpers, farolas, stops, frontales, espejos, cunas de motor.</p>
-         <a href="https://wa.me/57312589713" target="_blank" class="btn-wa-compact">
-           <i class="fab fa-whatsapp"></i> 312 589 713
+         <a href="https://wa.me/573125899713" target="_blank" class="btn-wa-compact">
+           <i class="fas fa-phone-alt" aria-hidden="true"></i>
+           <span>312 589 9713</span>
+           <i class="fab fa-whatsapp" aria-hidden="true"></i>
          </a>
        </div>
      </div>
@@ -383,17 +199,19 @@
          <h3 class="ficha-categoria-compact">Refrigeración</h3>
          <p class="ficha-descripcion-compact">Bronces, sincronizadores, piñones, kits de clutch, ejes, horquillas.</p>
          <a href="https://wa.me/573116391483" target="_blank" class="btn-wa-compact">
-           <i class="fab fa-whatsapp"></i> 311 639 1483
+           <i class="fas fa-phone-alt" aria-hidden="true"></i>
+           <span>311 639 1483</span>
+           <i class="fab fa-whatsapp" aria-hidden="true"></i>
          </a>
        </div>
      </div>
 
    </div>
- </div>
+ </section>
 
 
 <!-- ======= HERO COMERCIAL - SPLIT SCREEN ======= -->
-  <div class="marcas-section">
+  <section id="marcas" class="marcas-section">
     <div class="marcas-container">
       <div class="marcas-header">
         <div class="marcas-linea"></div>
@@ -401,6 +219,14 @@
         <div class="marcas-linea"></div>
       </div>
       <p class="marcas-subtitulo">Ofrecemos las mejores marcas del mercado garantizando calidad, respaldo y servicio</p>
+      <div class="marcas-atencion-online" aria-label="Atención online">
+        <span class="marcas-atencion-label">Atención online</span>
+        <strong>312 530 1564</strong>
+        <div class="marcas-atencion-actions">
+          <a href="tel:+573125301564" class="marcas-atencion-btn marcas-atencion-call">Llama</a>
+          <a href="https://wa.me/573132152330" target="_blank" rel="noopener noreferrer" class="marcas-atencion-btn marcas-atencion-whatsapp">WhatsApp</a>
+        </div>
+      </div>
 
       <div class="marcas-grid">
         <!-- Logo 1 - Mobis -->
@@ -409,7 +235,6 @@
             <img src="assets/Marcas/Mobislogo.png" alt="Mobis" class="marca-logo">
             <div class="marca-overlay"></div>
           </div>
-          <span class="marca-nombre">Mobis</span>
         </div>
 
         <!-- Logo 2 - Seco -->
@@ -418,7 +243,6 @@
             <img src="assets/Marcas/Secologo.png" alt="Seco" class="marca-logo">
             <div class="marca-overlay"></div>
           </div>
-          <span class="marca-nombre">Seco</span>
         </div>
 
         <!-- Logo 3 - Luk -->
@@ -427,7 +251,6 @@
             <img src="assets/Marcas/Luklogo.png" alt="Luk" class="marca-logo">
             <div class="marca-overlay"></div>
           </div>
-          <span class="marca-nombre">Luk</span>
         </div>
 
         <!-- Logo 4 - Xteer -->
@@ -436,7 +259,6 @@
             <img src="assets/Marcas/Xteerlogo.png" alt="Xteer" class="marca-logo">
             <div class="marca-overlay"></div>
           </div>
-          <span class="marca-nombre">Xteer</span>
         </div>
 
         <!-- Logo 5 - Durae -->
@@ -445,7 +267,6 @@
             <img src="assets/Marcas/Duraelogo.png" alt="Durae" class="marca-logo">
             <div class="marca-overlay"></div>
           </div>
-          <span class="marca-nombre">Durae</span>
         </div>
 
         <!-- Logo 6 - Mando -->
@@ -454,195 +275,155 @@
             <img src="assets/Marcas/Mandologo.png" alt="Mando" class="marca-logo">
             <div class="marca-overlay"></div>
           </div>
-          <span class="marca-nombre">Mando</span>
         </div>
 
-        <!-- Repetir para tener 12 (duplicar los 6) -->
+        <!-- Logo 7 - TP -->
         <div class="marca-card">
           <div class="marca-logo-wrapper">
-            <img src="assets/Marcas/Tplogo.png" alt="Mobis" class="marca-logo">
+            <img src="assets/Marcas/Tplogo.png" alt="TP" class="marca-logo">
             <div class="marca-overlay"></div>
           </div>
-          <span class="marca-nombre">TP</span>
         </div>
 
+        <!-- Logo 8 - Rik -->
         <div class="marca-card">
           <div class="marca-logo-wrapper">
-            <img src="assets/Marcas/Riklogo.png" alt="Seco" class="marca-logo">
+            <img src="assets/Marcas/Riklogo.png" alt="Rik" class="marca-logo">
             <div class="marca-overlay"></div>
           </div>
-          <span class="marca-nombre">Rik</span>
         </div>
 
+        <!-- Logo 9 - Npr -->
         <div class="marca-card">
           <div class="marca-logo-wrapper">
-            <img src="assets/Marcas/Nprlogo.png" alt="Luk" class="marca-logo">
+            <img src="assets/Marcas/Nprlogo.png" alt="Npr" class="marca-logo">
             <div class="marca-overlay"></div>
           </div>
-          <span class="marca-nombre">Npr</span>
         </div>
 
+        <!-- Logo 10 - Gates -->
         <div class="marca-card">
           <div class="marca-logo-wrapper">
-            <img src="assets/Marcas/Gateslogo.png" alt="Xteer" class="marca-logo">
+            <img src="assets/Marcas/Gateslogo.png" alt="Gates" class="marca-logo">
             <div class="marca-overlay"></div>
           </div>
-          <span class="marca-nombre">Gates</span>
         </div>
 
+        <!-- Logo 11 - Taiho -->
         <div class="marca-card">
           <div class="marca-logo-wrapper">
-            <img src="assets/Marcas/Taihologo.png" alt="Durae" class="marca-logo">
+            <img src="assets/Marcas/Taihologo.png" alt="Taiho" class="marca-logo">
             <div class="marca-overlay"></div>
           </div>
-          <span class="marca-nombre">Taiho</span>
         </div>
 
+        <!-- Logo 12 - Daidometal -->
         <div class="marca-card">
           <div class="marca-logo-wrapper">
-            <img src="assets/Marcas/Daidometallogo.png" alt="Mando" class="marca-logo">
+            <img src="assets/Marcas/Daidometallogo.png" alt="Daidometal" class="marca-logo">
             <div class="marca-overlay"></div>
           </div>
-          <span class="marca-nombre">Daidometal</span>
         </div>
 
       </div>
     </div>
+  </section>
     <!-- ===== ALMACÉN JKB ===== -->
-    <div class="almacen-scroll">
+    <div id="almacen-jkb" class="almacen-scroll">
       <div class="almacen-sticky">
-        <img src="assets/img/Productos/ALMACEN_JKB.png" alt="Almacén" class="almacen-img">
-        <div class="almacen-txt txt-1"><h2>Nuestro Almacén</h2></div>
-        <div class="almacen-txt txt-2"><p>Carrera 27 #64-45, Bogotá D.C.</p></div>
-        <div class="almacen-txt txt-3"><a href="https://wa.me/573128944968" class="almacen-btn"><i class="fab fa-whatsapp"></i> Visítanos</a></div>
+        <div class="almacen-copy">
+          <div class="almacen-txt txt-1"><h2>Nuestro Almacén</h2></div>
+          <div class="almacen-txt txt-2"><p>Carrera 27 #64-45, Bogotá D.C.</p></div>
+          <div class="almacen-txt txt-3"><a href="https://wa.me/573128944968" class="almacen-btn"><i class="fab fa-whatsapp"></i> Visítanos</a></div>
+        </div>
+        <div class="almacen-visual">
+          <img src="assets/img/Productos/ALMACEN_JKB.png" alt="Almacén Japón Korea Bogotá" class="almacen-img almacen-img-primary">
+          <img src="assets/img/Productos/ALMACEN2_JKB.png" alt="Almacén Japón Korea Bogotá vista alternativa" class="almacen-img almacen-img-secondary">
+          <div class="almacen-overlay"></div>
+          <div class="almacen-brillo"></div>
+        </div>
       </div>
     </div>
-<div class="hero-split-final">
-  <div class="hero-split-final-imagen">
-    <img src="assets/img/EquipoComercial.jpeg" alt="Equipo Comercial" class="hero-split-final-img">
-    <div class="hero-split-final-overlay"></div>
+<section id="about" class="equipo-comercial" aria-labelledby="equipo-comercial-title">
+  <div class="equipo-comercial__halo" aria-hidden="true"></div>
+  <div class="equipo-comercial__container">
+    <figure class="equipo-comercial__media">
+      <img src="assets/img/Productos/EquipoComercial2.jpeg" alt="Equipo comercial de Japón Korea Bogotá asesorando autopartes Hyundai y Kia" class="equipo-comercial__img" loading="lazy">
+      <span class="equipo-comercial__overlay" aria-hidden="true"></span>
+    </figure>
+    <article class="equipo-comercial__content">
+      <span class="equipo-comercial__line" aria-hidden="true"></span>
+      <h2 id="equipo-comercial-title">Nuestro equipo de apoyo para cada Km</h2>
+      <p>Nuestro compromiso se refleja en atención, servicio y respaldo con productos de excelente calidad para mantener rodando su inversión.</p>
+      <p>Contamos con el talento humano calificado para asesorarlo, garantizando confianza y soporte en todo momento.</p>
+      <a href="https://wa.me/573128944968" class="equipo-comercial__btn">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        <span>Cotizar ahora</span>
+      </a>
+    </article>
   </div>
-  <div class="hero-split-final-contenido">
-    <h1 class="hero-split-final-title">El equipo que respalda <span>cada kilómetro</span></h1>
-    <div class="hero-split-final-destacado">
-      <div class="hero-split-final-borde"></div>
-      <p class="hero-split-final-texto-destacado">Nuestro compromiso se refleja en atención, servicio y respaldo con productos de excelente calidad para mantener andando su inversión.</p>
+</section>
+
+<section id="mensajeria" class="mensajeria-urbana" aria-labelledby="mensajeria-urbana-title">
+  <img src="assets/img/Productos/JKB_Domicilios.png" alt="Mensajería urbana de Japón Korea Bogotá entregando repuestos Hyundai y Kia" class="mensajeria-urbana__photo" loading="lazy">
+
+  <div class="mensajeria-urbana__container">
+    <article class="mensajeria-urbana__content">
+      <span class="mensajeria-urbana__eyebrow">
+        <i class="fas fa-motorcycle" aria-hidden="true"></i>
+        Pedidos Bogotá
+      </span>
+
+      <h2 id="mensajeria-urbana-title" class="mensajeria-urbana__title">
+        Entrega urbana 8 a.m. - 6 p.m.
+      </h2>
+
+      <p class="mensajeria-urbana__lead">
+        Repuestos Hyundai y Kia directo a tu taller, almacén o domicilio en Bogotá.
+      </p>
+
+      <div class="mensajeria-urbana__actions" aria-label="Solicitar servicio de mensajería">
+        <a href="https://wa.me/573132152330" target="_blank" rel="noopener noreferrer" class="mensajeria-urbana__btn mensajeria-urbana__btn--primary">
+          <i class="fab fa-whatsapp" aria-hidden="true"></i>
+          <span>Hacer pedido</span>
+        </a>
+        <a href="tel:+573132152330" class="mensajeria-urbana__btn mensajeria-urbana__btn--secondary">
+          <i class="fas fa-phone-alt" aria-hidden="true"></i>
+          <span>Llamar</span>
+        </a>
+      </div>
+    </article>
+
+    <div class="mensajeria-urbana__coverage" aria-label="Cobertura de mensajería">
+      <div class="mensajeria-urbana__grid">
+        <div class="mensajeria-urbana__item">
+          <i class="fas fa-city" aria-hidden="true"></i>
+          <strong>Solo Bogotá</strong>
+          <span>Cobertura urbana dentro de la ciudad.</span>
+        </div>
+        <div class="mensajeria-urbana__item">
+          <i class="fas fa-clock" aria-hidden="true"></i>
+          <strong>8:00 a.m. - 6:00 p.m.</strong>
+          <span>Pedidos y despachos en horario comercial.</span>
+        </div>
+        <div class="mensajeria-urbana__item">
+          <i class="fas fa-shield-alt" aria-hidden="true"></i>
+          <strong>Confirmación directa</strong>
+          <span>Validamos disponibilidad antes de enviar.</span>
+        </div>
+      </div>
     </div>
-    <p class="hero-split-final-texto-secundario">Contamos con el talento humano calificado para asesorarlo, garantizando confianza y soporte en todo momento.</p>
-    <a href="https://wa.me/573128944968" class="hero-split-final-btn">
-      <i class="fab fa-whatsapp"></i> Cotizar ahora
-    </a>
   </div>
-</div>
+</section>
 
-
+  </div><!-- /jkb-content-unified -->
 
     <!-- Durae Section Starts -->
      <section id="Durae">
-  <!-- ======= NUESTRAS MARCAS ======= -->
-  </div>
       <div class="durae-container fondoautopartes1">
-        <div class="mando_encabezado">
-          <h2 class="mando_titulo">Principal Aliado</h2>
-        </div>
-        <div class="mando_encabezado2">
-          <h2 class="mando_titulo2">Para ventas de mayor</h2>
-        </div>
-        <br>
-        <div class="durae-images">
-          <div class="durae-image-wrapper">
-            <img src="assets/img/casamandologo.png" alt="Repuestos de motor Hyundai y Kia marca MANDO" class="durae-image">
-          </div>
-        </div>
-        <br>
-        <div class="mando_encabezado">
-          <h2 class="mando_subtitulo">Carrera 29D Nº 70 - 38 Barrio Alcazares - Bogotá D.C.</h2>
-          <h2 class="mando_subtitulo">Celular: 3238495684 / 3104852837</h2>
-        </div>
-            <br>
-  <!-- ======= COMPRA CON NOSOTROS - DOS COLUMNAS ======= -->
-  <div class="compra-dos-final">
-    <div class="compra-dos-final-container">
-
-      <!-- COLUMNA IZQUIERDA - PASOS -->
-      <div class="compra-dos-final-izquierda">
-        <div class="compra-dos-final-header">
-          <h2 data-aos="fade-up">Compra con nosotros de manera sencilla</h2>
-          <div class="compra-dos-final-linea"></div>
-        </div>
-        <div class="compra-dos-final-pasos">
-          <div class="compra-dos-final-paso" data-aos="fade-up" data-aos-delay="200">
-            <i><img src="assets/img/check.png" alt="check"/></i>
-            <div>
-              <p style="color:#000; font-weight: bold;">Contacta con un asesor por nuestros canales digitales
-                <span style="color:grey; font-weight:200;">Whatsapp, instagram, chat de servicio o correo electrónico</span>
-              </p>
-            </div>
-          </div>
-          <div class="compra-dos-final-paso" data-aos="fade-up" data-aos-delay="200">
-            <i><img src="assets/img/check.png" alt="check"/></i>
-            <div>
-              <p style="color:#000; font-weight: bold;">Allí recibirás de manera inmediata atención a tu solicitud</p>
-            </div>
-          </div>
-          <div class="compra-dos-final-paso" data-aos="fade-up" data-aos-delay="200">
-            <i><img src="assets/img/check.png" alt="check"/></i>
-            <div>
-              <p style="color:#000; font-weight: bold;">Ten el VIN/Chasis y/o tarjeta de propiedad a la mano
-                <span style="color:grey; font-weight:200;">Facilitando la localización y exactitud del producto requerido</span>
-              </p>
-            </div>
-          </div>
-          <div class="compra-dos-final-paso" data-aos="fade-up" data-aos-delay="200">
-            <i><img src="assets/img/check.png" alt="check"/></i>
-            <div>
-              <p style="color:#000; font-weight: bold;">Nuestros asesores te indicarán la disponibilidad y precio del producto</p>
-            </div>
-          </div>
-          <div class="compra-dos-final-paso" data-aos="fade-up" data-aos-delay="200">
-            <i><img src="assets/img/check.png" alt="check"/></i>
-            <div>
-              <p style="color:#000; font-weight: bold;">Realiza el pago por nuestros medios digitales
-                <span style="color:grey; font-weight:200;">Tarjetas de crédito, débito, PSE transferencia electrónica y nequi</span>
-              </p>
-            </div>
-          </div>
-          <div class="compra-dos-final-paso" data-aos="fade-up" data-aos-delay="200">
-            <i><img src="assets/img/check.png" alt="check"/></i>
-            <div>
-              <p style="color:#000; font-weight: bold;">Despachamos tus productos a nivel nacional
-                <span style="color:grey; font-weight:200;">Con las más reconocidas empresas de logística</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- COLUMNA DERECHA - VIDEO -->
-      <div class="compra-dos-final-derecha" data-aos="fade-up" data-aos-delay="100">
-        <div class="compra-dos-final-video">
-          <video class="img-fluid" preload="auto" autoplay loop muted playsinline loading="lazy"
-             style="height: auto; max-width: 100%; z-index: 1000;">
-            <source src="assets/img/VIDEO_(1280_x_720px).mp4" media="(max-width: 767px)" type="video/mp4">
-            <source src="assets/img/VIDEO_(1900_x_1080 px).mp4" type="video/mp4">
-            Tu navegador no soporta videos.
-          </video>
-        </div>
-      </div>
-
-    </div>
-  </div>
-        </div>
-        <div class="section-title" data-aos="fade-up">
-          <br><br>
-          <a href="tel:+573132152330" target="_blank" class="banner_pagos_btn">
-            <i class="fas fa-mobile-screen-button"></i>   Llamar ahora
-          </a><br><br><br>
-      </div>
-    </section>
     <!-- Pagos Japon Korea Fin-->
-    <!-- ======= BannerpagosJapon Korea ======= -->
-     <br><br><br>
+    </section>
+
     <section id="banner_pagos">
       <div class="banner_pagos_container fondoautopartes1">
         <div class="encabezado_pagos">
@@ -711,15 +492,125 @@
         </div>
       </div>
     </section>
+
+    <!-- ======= COMPRA CON NOSOTROS - DOS COLUMNAS ======= -->
+    <div id="payment_steps" class="compra-dos-final">
+      <div class="compra-dos-final-container">
+        <div class="compra-dos-final-center-title" aria-hidden="true">Envíos a todo el país</div>
+
+        <!-- COLUMNA IZQUIERDA - PASOS -->
+        <div class="compra-dos-final-izquierda">
+          <div class="compra-dos-final-pasos">
+            <div class="compra-dos-final-paso" data-aos="fade-up" data-aos-delay="200">
+              <span class="compra-dos-final-check" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>
+              <div>
+                <p style="color:#000; font-weight: bold;">Contacta con un asesor por nuestros canales digitales
+                  <span style="color:grey; font-weight:200;">Whatsapp, instagram, chat de servicio o correo electrónico</span>
+                </p>
+              </div>
+            </div>
+            <div class="compra-dos-final-paso" data-aos="fade-up" data-aos-delay="200">
+              <span class="compra-dos-final-check" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>
+              <div>
+                <p style="color:#000; font-weight: bold;">Allí recibirás de manera inmediata atención a tu solicitud</p>
+              </div>
+            </div>
+            <div class="compra-dos-final-paso" data-aos="fade-up" data-aos-delay="200">
+              <span class="compra-dos-final-check" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>
+              <div>
+                <p style="color:#000; font-weight: bold;">Ten el VIN/Chasis y/o tarjeta de propiedad a la mano
+                  <span style="color:grey; font-weight:200;">Facilitando la localización y exactitud del producto requerido</span>
+                </p>
+              </div>
+            </div>
+            <div class="compra-dos-final-paso" data-aos="fade-up" data-aos-delay="200">
+              <span class="compra-dos-final-check" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>
+              <div>
+                <p style="color:#000; font-weight: bold;">Nuestros asesores te indicarán la disponibilidad y precio del producto</p>
+              </div>
+            </div>
+            <div class="compra-dos-final-paso" data-aos="fade-up" data-aos-delay="200">
+              <span class="compra-dos-final-check" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>
+              <div>
+                <p style="color:#000; font-weight: bold;">Realiza el pago por nuestros medios digitales
+                  <span style="color:grey; font-weight:200;">Tarjetas de crédito, débito, PSE transferencia electrónica y nequi</span>
+                </p>
+              </div>
+            </div>
+            <div class="compra-dos-final-paso" data-aos="fade-up" data-aos-delay="200">
+              <span class="compra-dos-final-check" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>
+              <div>
+                <p style="color:#000; font-weight: bold;">Despachamos tus productos a nivel nacional
+                  <span style="color:grey; font-weight:200;">Con las más reconocidas empresas de logística</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLUMNA DERECHA - VIDEO -->
+        <div class="compra-dos-final-derecha" data-aos="fade-up" data-aos-delay="100">
+          <div class="compra-dos-final-video">
+            <video class="img-fluid" preload="auto" autoplay loop muted playsinline loading="lazy"
+               style="height: auto; max-width: 100%; z-index: 1000;">
+              <source src="assets/img/VIDEO_(1280_x_720px).mp4" type="video/mp4">
+              Tu navegador no soporta videos.
+            </video>
+          </div>
+        </div>
+
+      </div>
+    </div>
     <!-- Fin Bannerpagos Japon Korea-->
 
-
-
+      <div class="durae-container fondoautopartes1">
+        <div class="mando_encabezado">
+          <h2 class="mando_titulo">Principal Aliado</h2>
+        </div>
+        <div class="mando_encabezado2">
+          <h2 class="mando_titulo2">Para ventas de mayor</h2>
+        </div>
+        <br>
+        <div class="durae-images">
+          <div class="durae-image-wrapper">
+            <img src="assets/img/casamandologo.png" alt="Repuestos de motor Hyundai y Kia marca MANDO" class="durae-image">
+          </div>
+        </div>
+        <br>
+        <div class="mando_encabezado">
+          <h2 class="mando_subtitulo">Carrera 29D Nº 70 - 38 Barrio Alcazares - Bogotá D.C.</h2>
+          <h2 class="mando_subtitulo">Celular: 323 849 5684 / 310 485 2837</h2>
+        </div>
+      </div>
 
     <!-- ======= INICIO DEL FOOTER JKB ULTRA-MINIMAL YELLOW - VERSIÓN FINAL ======= -->
 
 
-  <footer class="f-minimal-yellow">
+  <footer id="contactjkid" class="f-minimal-yellow">
     <div class="f-container">
       <div class="f-grid-compact">
 
@@ -762,8 +653,8 @@
 
       <nav class="f-nav-minimal">
         <a href="#autopartes">Productos</a>
-        <a href="#payment_steps">Compras</a>
         <a href="#banner_pagos">Pagos</a>
+        <a href="#payment_steps">Compras</a>
         <a href="#contactjkid">Contáctanos</a>
         <a href="https://japonkoreabogota.com/pag_promociones_mant">Promociones</a>
         <a href="https://japonkoreabogota.com/pag_tienda_mant">Compra en línea</a>
@@ -794,27 +685,177 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbS83gLDxBbBDYErkMuUuegog7dP5OWN4&callback=initMap"> </script>
   <script>
   (function(){
-  var s=document.querySelector(".almacen-scroll");
-  var img=document.querySelector(".almacen-img");
-  var t1=document.querySelector(".txt-1");
-  var t2=document.querySelector(".txt-2");
-  var t3=document.querySelector(".txt-3");
-  function u(){
-  var r=s.getBoundingClientRect();
+  var equipoImg=document.querySelector(".equipo-comercial__img");
+  function equipoParallax(){
+  if(!equipoImg){return;}
+  var rect=equipoImg.getBoundingClientRect();
   var wh=window.innerHeight;
-  var p=1-(r.bottom/(wh*2));
+  if(rect.bottom<0||rect.top>wh){return;}
+  var progress=(wh-rect.top)/(wh+rect.height);
+  progress=Math.max(0,Math.min(1,progress));
+  equipoImg.style.setProperty("--equipo-parallax",((progress-0.5)*-26)+"px");
+  }
+  window.addEventListener("scroll",equipoParallax,{passive:!0});
+  window.addEventListener("resize",equipoParallax);
+  equipoParallax();
+  })();
+  </script>
+  <script>
+  (function(){
+  var mensajeria=document.querySelector(".mensajeria-urbana");
+  if(!mensajeria){return;}
+  var photo=mensajeria.querySelector(".mensajeria-urbana__photo");
+  var textItems=mensajeria.querySelectorAll(".mensajeria-urbana__content, .mensajeria-urbana__coverage");
+  if(window.location.hash==="#mensajeria"){
+  mensajeria.classList.add("visible");
+  mensajeria.classList.add("photo-active");
+  if(photo){photo.classList.add("photo-enter");}
+  textItems.forEach(function(el,i){
+  el.style.setProperty("--text-delay",(i*0.12)+"s");
+  el.classList.add("text-enter");
+  });
+  }
+  if(!("IntersectionObserver" in window)){
+  mensajeria.classList.add("visible");
+  mensajeria.classList.add("photo-active");
+  if(photo){photo.classList.add("photo-enter");}
+  textItems.forEach(function(el,i){
+  el.style.setProperty("--text-delay",(i*0.12)+"s");
+  el.classList.add("text-enter");
+  });
+  return;
+  }
+  var observer=new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+  if(entry.isIntersecting){
+  entry.target.classList.add("visible");
+  entry.target.classList.add("photo-active");
+  if(photo){
+  photo.classList.remove("photo-exit");
+  photo.classList.add("photo-enter");
+  }
+  textItems.forEach(function(el,i){
+  el.style.setProperty("--text-delay",(i*0.12)+"s");
+  el.classList.remove("text-exit");
+  el.classList.add("text-enter");
+  });
+  }else{
+  entry.target.classList.remove("photo-active");
+  if(photo){
+  photo.classList.remove("photo-enter");
+  photo.classList.add("photo-exit");
+  }
+  textItems.forEach(function(el){
+  el.classList.remove("text-enter");
+  el.classList.add("text-exit");
+  });
+  }
+  });
+  },{threshold:0.35,rootMargin:"-12% 0px -12% 0px"});
+  observer.observe(mensajeria);
+  })();
+
+  /* ── Productos: animación scroll para las 6 fichas ── */
+  (function(){
+  var seccion=document.querySelector(".seccion-autopartes-compact");
+  if(!seccion){return;}
+  var header=seccion.querySelector(".autopartes-header-compact");
+  var fichas=seccion.querySelectorAll(".ficha-compact");
+  if(window.location.hash==="#autopartes"){
+  if(header){header.classList.add("prod-enter");}
+  fichas.forEach(function(el,i){
+  el.style.setProperty("--prod-delay",(i*0.08)+"s");
+  el.classList.add("prod-enter");
+  });
+  }
+  if(!("IntersectionObserver" in window)){
+  if(header){header.classList.add("prod-enter");}
+  fichas.forEach(function(el,i){
+  el.style.setProperty("--prod-delay",(i*0.08)+"s");
+  el.classList.add("prod-enter");
+  });
+  return;
+  }
+  var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+  if(entry.isIntersecting){
+  if(header){
+  header.classList.remove("prod-exit");
+  header.classList.add("prod-enter");
+  }
+  fichas.forEach(function(el,i){
+  el.style.setProperty("--prod-delay",(i*0.08)+"s");
+  el.classList.remove("prod-exit");
+  el.classList.add("prod-enter");
+  });
+  }else{
+  if(header){
+  header.classList.remove("prod-enter");
+  header.classList.add("prod-exit");
+  }
+  fichas.forEach(function(el){
+  el.classList.remove("prod-enter");
+  el.classList.add("prod-exit");
+  });
+  }
+  });
+  },{threshold:0.2,rootMargin:"-8% 0px -8% 0px"});
+  obs.observe(seccion);
+  })();
+  </script>
+  <script>
+  (function(){
+  /* ============================================================
+     ALMACÉN JKB - Scroll Engine (SOLO IMÁGENES + BRILLO)
+     Los textos se ven SIEMPRE, sin animación.
+     ============================================================ */
+  var s=document.querySelector(".almacen-scroll");
+  var img=document.querySelector(".almacen-img-primary");
+  var img2=document.querySelector(".almacen-img-secondary");
+  var brillo=document.querySelector(".almacen-brillo");
+  if(!s||!img||!img2||!brillo){return;}
+
+  function u(){
+  if(window.matchMedia("(max-width: 1025px)").matches){
+  var mr=s.getBoundingClientRect();
+  var mobileActive=mr.top<window.innerHeight*0.68&&mr.bottom>window.innerHeight*0.22;
+  s.classList.toggle("is-mobile-active",mobileActive);
+  return;
+  }
+  s.classList.remove("is-mobile-active");
+  var r=s.getBoundingClientRect();
+  var sh=s.offsetHeight;
+  var wh=window.innerHeight;
+  var scrollable=sh-wh;
+  var scrolled=Math.max(0,Math.min(scrollable,-r.top));
+  var p=scrollable>0?scrolled/scrollable:(wh-r.top)/(wh+r.height);
   p=Math.max(0,Math.min(1,p));
-  img.style.filter="brightness("+(0.3+p*0.7)+")";
-  if(p>0.2){t1.style.opacity=(p-0.2)*2;t1.style.transform="translateY("+(30-(p-0.2)*60)+"px)";}
-  else{t1.style.opacity=0;t1.style.transform="translateY(30px)";}
-  if(p>0.45){t2.style.opacity=(p-0.45)*3;t2.style.transform="translateY("+(30-(p-0.45)*60)+"px)";}
-  else{t2.style.opacity=0;t2.style.transform="translateY(30px)";}
-  if(p>0.7){t3.style.opacity=(p-0.7)*4;t3.style.transform="translateY("+(30-(p-0.7)*60)+"px)";}
-  else{t3.style.opacity=0;t3.style.transform="translateY(30px)";}
+  s.style.setProperty("--almacen-progress",p.toFixed(3));
+  s.style.setProperty("--almacen-gold-x",(72+p*10).toFixed(2)+"%");
+  s.style.setProperty("--almacen-green-x",(12+p*8).toFixed(2)+"%");
+  s.style.setProperty("--almacen-visual-y",(6-p*12).toFixed(2)+"px");
+  s.style.setProperty("--almacen-cut-left",(0.5+p*1.2).toFixed(2)+"%");
+  s.style.setProperty("--almacen-cut-bottom",(96-p*1.8).toFixed(2)+"%");
+  s.style.setProperty("--almacen-frame-opacity",(0.45+p*0.32).toFixed(3));
+  s.style.setProperty("--almacen-rail-x",(10+p*18).toFixed(2)+"%");
+  var fadeStart=wh*0.27;
+  var fadeDistance=wh*0.16;
+  var fade=Math.max(0,Math.min(1,(fadeStart-r.top)/fadeDistance));
+  img.style.opacity=1-fade;
+  img2.style.opacity=fade;
+  img.style.transform="scale("+(1.035+p*0.004)+") translateY("+((0.5-p)*6)+"px)";
+  img2.style.transform="scale("+(1.045-p*0.002)+") translateY("+((p-0.5)*-5)+"px)";
+  /* Brillo que baja con el scroll */
+  var brilloY=p*100;
+  brillo.style.opacity=0.08+p*0.22;
+  brillo.style.transform="translateY("+brilloY+"%)";
   }
   window.addEventListener("scroll",u,{passive:!0});
+  window.addEventListener("resize",u);
   u();
   })();
   </script>
+
+  <!-- Scroll Reveal eliminado - los componentes se ven siempre -->
 </body>
 </html>

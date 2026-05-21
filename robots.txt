@@ -1,7 +1,4 @@
 User-agent: *
-Disallow: /admin/
-Disallow: /private/
-Disallow: /cgi-bin/
 Allow: /
 
 Sitemap: https://www.japonkoreabogota.com/sitemap.xml

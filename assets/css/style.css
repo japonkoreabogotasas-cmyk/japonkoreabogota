@@ -36,6 +36,69 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+/* --------------------------------------------------------------
+# Critical Hero Guard (anti-flash on hard refresh)
+-------------------------------------------------------------- */
+.video-banner.jkb-video-hero {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: calc(100svh - 6rem);
+  min-height: 500px;
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+  isolation: isolate;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.video-banner.jkb-video-hero video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Contexto de marca solo en móvil */
+.jkb-hero-context {
+  display: none;
+}
+
+@media (max-width: 1025px) {
+  .video-banner.jkb-video-hero {
+    height: calc(100svh - 5.4rem);
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-banner.jkb-video-hero {
+    height: calc(100svh - 5rem);
+    min-height: 360px;
+  }
+  .video-banner.jkb-video-hero video {
+    object-position: center 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  .jkb-hero-context {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-banner.jkb-video-hero {
+    height: calc(100svh - 5rem);
+    min-height: 300px;
+  }
+}
+
 html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
 -webkit-text-size-adjust:none;
 }
@@ -200,7 +263,7 @@ nav ul {
 }
 
 nav li {
-  margin: 0 15px; /* Espacio entre los elementos */
+  margin: 0 11px; /* Espacio entre los elementos */
 }
 
 nav a {
@@ -217,6 +280,19 @@ nav a {
 nav a:hover {
   color: #014b72; /* Amarillo suave en hover */
   transform: translateY(-3px); /* Efecto de elevación */
+}
+
+.JK_Header .jk2025_menu a.is-active {
+  color: #014b72;
+}
+
+.JK_Header .jk2025_menu a.is-active::before {
+  background-color: #f8d847;
+}
+
+.nav-anchor {
+  display: block;
+  height: 0;
 }
 
 nav a::before {
@@ -1029,55 +1105,81 @@ nav li:hover {
 # JAPON KOREA BOTONES SOCIALES
 --------------------------------------------------------------*/
 .icon-bar {
-  z-index: 100;
-  position: fixed ;
-  top: 40%;
-  right: 0%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  z-index: 99;
+  position: fixed;
+  top: calc(6rem - 1px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  padding: 0;
+  pointer-events: none;
 }
-
 .icon-bar a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 46px;
+  width: 38px;
+  height: 44px;
   text-align: center;
   padding: 0;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 22px;
+  transition: height 0.55s cubic-bezier(0.25, 0.1, 0.25, 1),
+              box-shadow 0.55s cubic-bezier(0.25, 0.1, 0.25, 1),
+              background 0.45s ease,
+              filter 0.45s ease,
+              border-radius 0.45s ease;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 0 2px 8px rgba(26,42,79,0.18);
+  pointer-events: auto;
+  position: relative;
+  opacity: 1;
+  border-radius: 0 0 10px 10px;
 }
-
-.icon-bar a:hover {
-  background-color: #000;
+.icon-bar a.facebook {
+  background: #1877F2;
 }
-
-.facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.whatsapp {
+.icon-bar a.whatsapp {
   background: #25D366;
-  color: white;
+}
+.icon-bar a.instagram {
+  background: #E4405F;
+}
+.icon-bar a.phone {
+  background: #34b7f1;
+}
+.icon-bar a:hover {
+  height: 56px !important;
+  z-index: 10;
+  filter: brightness(1.25) saturate(1.15);
+  box-shadow: 0 8px 24px rgba(26,42,79,0.38) !important;
+  border-radius: 0 0 8px 8px !important;
+}
+.icon-bar a:hover i {
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.6));
+}
+.icon-bar a i {
+  transition: filter 0.45s ease;
+  font-size: 1.06em;
 }
 
-.chat {
-  background: #4D96E8;
-  color: white;
-}
-
-.instagram {
-  background: #F862B1;
-  color: white;
-}
-
-.phone {
-  background: #FF7373;
-  color: white;
+@media (max-width: 1025px) {
+  .icon-bar {
+    top: 96px;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    padding-top: 0;
+  }
+  .icon-bar a {
+    width: 34px;
+    height: 38px;
+    font-size: 14px;
+  }
+  .icon-bar a:hover {
+    height: 48px !important;
+  }
 }
 
 .content {

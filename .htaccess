@@ -2,29 +2,38 @@
 RewriteEngine On
 RewriteBase /
 
-# Forzar HTTPS y eliminar "www"
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP_HOST} ^(www\.)?japonkoreabogota\.com$ [NC]
-RewriteRule ^(.*)$ https://japonkoreabogota.com/$1 [L,R=301]
+# Canonical de host (www)
+RewriteCond %{HTTP_HOST} !^www\.japonkoreabogota\.com$ [NC]
+RewriteRule ^ https://www.japonkoreabogota.com%{REQUEST_URI} [L,R=301]
 
-# Forzar HTTPS en recursos internos
-RewriteCond %{HTTP_HOST} ^(www\.)?japonkoreabogota\.com$ [NC]
-RewriteRule .* - [E=UPGRADE]
+# Canonical de protocolo (compatible con reverse proxy como Railway)
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
+RewriteRule ^ https://www.japonkoreabogota.com%{REQUEST_URI} [L,R=301]
+
+# Consolidación de URLs antiguas al nuevo sitio
+RewriteRule ^pag_compras_/?$ /#purchase-flow [L,R=301,NE]
+RewriteRule ^pag_formas_pago_/?$ /#secure-payments [L,R=301,NE]
+RewriteRule ^pag_cotizador(?:_en_linea)?/?$ /#support-team [L,R=301,NE]
+RewriteRule ^pag_promociones_mant/?$ / [L,R=301]
+RewriteRule ^pag_tienda_mant/?$ / [L,R=301]
+
+# URL limpia de políticas (sin extensión) hacia URL canónica
+RewriteRule ^pag_politica_seguridad_y_privacidad/?$ /pag_politica_seguridad_y_privacidad.html [L,R=301]
+</IfModule>
+
 <IfModule mod_headers.c>
-    Header always set Content-Security-Policy "upgrade-insecure-requests;" env=UPGRADE
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
 </IfModule>
 
-# Redirigir tráfico HTTP a HTTPS
-RewriteCond %{HTTP_HOST} japonkoreabogota\.com [NC]
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://japonkoreabogota.com/$1 [R,L]
+ErrorDocument 404 /404.html
 
-# Redirecciones de carpetas a páginas en la raíz
-RewriteRule ^pag_compras_/?$ /pag_compras_.html [L]
-RewriteRule ^pag_politica_seguridad_y_privacidad/?$ /pag_politica_seguridad_y_privacidad.html [L]
-RewriteRule ^pag_cotizador_en_linea/?$ /pag_cotizador.html [L]
-RewriteRule ^pag_formas_pago_/?$ /pag_formas_pago_.html [L]
-RewriteRule ^pag_promociones_mant/?$ /pag_promociones_mant.html [L]
-RewriteRule ^pag_tienda_mant/?$ /pag_tienda_mant.html [L]
-RewriteRule ^pag_promociones/?$ /pag_promociones.html [L]
-</IfModule>
+# Redirecciones 301 - URLs legacy
+RewriteRule ^pag_compras_\.html$ / [R=301,L]
+RewriteRule ^pag_formas_pago_\.html$ / [R=301,L]
+RewriteRule ^pag_cotizador\.html$ / [R=301,L]
+RewriteRule ^pag_promociones_mant\.html$ / [R=301,L]
+RewriteRule ^pag_tienda_mant\.html$ / [R=301,L]
+RewriteRule ^promociones\.html$ / [R=301,L]
+RewriteRule ^tienda-en-linea\.html$ / [R=301,L]
+RewriteRule ^store\.html$ / [R=301,L]

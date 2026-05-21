@@ -7,6 +7,150 @@
 !(function($) {
   "use strict";
 
+  function getTargetFromHash(hash) {
+    if (!hash || hash === '#') {
+      return null;
+    }
+
+    if (hash === '#products' || hash === '#autopartes') {
+      var productsSection = document.querySelector('#autopartes');
+      var productsGrid = productsSection ? productsSection.querySelector('.grid-fichas-compact') : null;
+      return productsGrid || productsSection || document.getElementById(hash.slice(1));
+    }
+
+    var target = document.getElementById(hash.slice(1));
+    if (target) {
+      return target;
+    }
+
+    try {
+      var queryTarget = document.querySelector(hash);
+      if (!queryTarget) {
+        return null;
+      }
+
+      return queryTarget;
+    } catch (err) {
+      return null;
+    }
+  }
+
+  function getTopAlignedScrollTop(target) {
+    var top = target.getBoundingClientRect().top + window.pageYOffset;
+    var fixedHeader = document.querySelector('.JK_Header');
+    if (fixedHeader) {
+      top -= Math.ceil(fixedHeader.getBoundingClientRect().height + 6);
+    } else if ($('#header').length) {
+      top -= $('#header').outerHeight();
+    }
+    return Math.max(0, Math.round(top));
+  }
+
+  function getPortfolioTop() {
+    var syncCard = document.querySelector('#autopartes .ficha-sincronizacion');
+    if (!syncCard) {
+      return null;
+    }
+    var top = 0;
+    var node = syncCard;
+    while (node) {
+      top += node.offsetTop || 0;
+      node = node.offsetParent;
+    }
+    var extraUp = Math.round(window.innerHeight * 0.15);
+    return Math.max(0, Math.round(top - extraUp));
+  }
+
+  function centerScrollToTarget(target, duration) {
+    $('html, body').stop(true).animate({
+      scrollTop: getTopAlignedScrollTop(target)
+    }, duration || 900, 'easeInOutExpo');
+  }
+
+  // Centered scroll for every internal anchor link
+  $(document).on('click', 'a[href*="#"]', function(e) {
+    if (this.classList && this.classList.contains('jk-nav-scroll')) {
+      return;
+    }
+
+    var href = this.getAttribute('href');
+    if (!href || href === '#' || this.hasAttribute('data-toggle') || this.hasAttribute('data-bs-toggle')) {
+      return;
+    }
+
+    var isSamePageHash = location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') &&
+      location.hostname === this.hostname &&
+      href.indexOf('#') !== -1;
+
+    if (!isSamePageHash && href.charAt(0) !== '#') {
+      return;
+    }
+
+    var hash = this.hash || href.slice(href.indexOf('#'));
+    var target = getTargetFromHash(hash);
+    if (!target) {
+      return;
+    }
+
+    e.preventDefault();
+    e.stopImmediatePropagation();
+
+    if (hash === '#products' || hash === '#autopartes') {
+      var portfolioTop = getPortfolioTop();
+      if (portfolioTop !== null) {
+        $('html, body').stop(true).animate({
+          scrollTop: portfolioTop
+        }, 900, 'easeInOutExpo');
+      } else {
+        centerScrollToTarget(target, 900);
+      }
+    } else {
+      centerScrollToTarget(target, 900);
+    }
+
+    if (history.pushState) {
+      history.pushState(null, '', hash);
+    }
+
+    if ($(this).parents('.nav-menu, .mobile-nav').length) {
+      $('.nav-menu .active, .mobile-nav .active').removeClass('active');
+      $(this).closest('li').addClass('active');
+    }
+
+    if ($('body').hasClass('mobile-nav-active')) {
+      $('body').removeClass('mobile-nav-active');
+      $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+      $('.mobile-nav-overly').fadeOut();
+    }
+  });
+
+  // When opening a page with hash, center the destination immediately
+  $(window).on('load', function() {
+    if (!window.location.hash) {
+      return;
+    }
+
+    var navManagedHash = '.jk-nav-scroll[href="' + window.location.hash + '"]';
+    if (document.querySelector(navManagedHash)) {
+      return;
+    }
+
+    var target = getTargetFromHash(window.location.hash);
+    if (!target) {
+      return;
+    }
+    window.setTimeout(function() {
+      if (window.location.hash === '#products' || window.location.hash === '#autopartes') {
+        var portfolioTop = getPortfolioTop();
+        if (portfolioTop !== null) {
+          window.scrollTo(0, portfolioTop);
+          return;
+        }
+      }
+      window.scrollTo(0, getTopAlignedScrollTop(target));
+    }, 30);
+  });
+
   // Smooth scroll for the navigation menu and links with .scrollto classes
   $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -138,26 +282,27 @@
     }
   });
 
-  // Porfolio isotope and filter
+  // Portfolio isotope/venobox: solo inicializar si los plugins existen
   $(window).on('load', function() {
-    var portfolioIsotope = $('.portfolio-container').isotope({
-      itemSelector: '.portfolio-item',
-      layoutMode: 'fitRows'
-    });
-
-    $('#portfolio-flters li').on('click', function() {
-      $("#portfolio-flters li").removeClass('filter-active');
-      $(this).addClass('filter-active');
-
-      portfolioIsotope.isotope({
-        filter: $(this).data('filter')
+    if ($.fn.isotope && $('.portfolio-container').length) {
+      var portfolioIsotope = $('.portfolio-container').isotope({
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
       });
-    });
 
-    // Initiate venobox (lightbox feature used in portofilo)
-    $(document).ready(function() {
+      $('#portfolio-flters li').on('click', function() {
+        $("#portfolio-flters li").removeClass('filter-active');
+        $(this).addClass('filter-active');
+
+        portfolioIsotope.isotope({
+          filter: $(this).data('filter')
+        });
+      });
+    }
+
+    if ($.fn.venobox && $('.venobox').length) {
       $('.venobox').venobox();
-    });
+    }
   });
 
   // Initi AOS

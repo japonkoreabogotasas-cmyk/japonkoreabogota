@@ -486,88 +486,195 @@
 /* Sin alterar nada del CSS existente                     */
 /* ====================================================== */
 
-/* Header: entra desde arriba con blur */
+/* Dirección alternada para profundidad editorial */
+.ficha-compact:nth-child(odd) {
+    --prod-shift-x: -24px;
+    --prod-exit-tilt: -3deg;
+}
+
+.ficha-compact:nth-child(even) {
+    --prod-shift-x: 24px;
+    --prod-exit-tilt: 3deg;
+}
+
+/* Header: entrada épica y corporativa */
 .autopartes-header-compact.prod-enter {
-    animation: prodHeaderEnter 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation: prodHeaderEnter 1.05s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 }
 
 @keyframes prodHeaderEnter {
     0% {
         opacity: 0;
-        transform: translateY(-24px) scale(0.96);
-        filter: blur(6px) brightness(0.7);
+        transform: perspective(980px) translateY(-28px) rotateX(10deg) scale(0.97);
+        filter: blur(7px) brightness(0.84);
     }
-    60% {
-        opacity: 0.9;
-        transform: translateY(2px) scale(1.005);
-        filter: blur(1px) brightness(1.05);
+    62% {
+        opacity: 0.92;
+        transform: perspective(980px) translateY(3px) rotateX(-1deg) scale(1.004);
+        filter: blur(1.2px) brightness(1.04);
     }
     100% {
         opacity: 1;
-        transform: translateY(0) scale(1);
+        transform: perspective(980px) translateY(0) rotateX(0deg) scale(1);
         filter: blur(0) brightness(1);
     }
 }
 
 .autopartes-header-compact.prod-exit {
-    animation: prodHeaderExit 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation: prodHeaderExit 0.78s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 @keyframes prodHeaderExit {
     0% {
         opacity: 1;
-        transform: translateY(0) scale(1);
+        transform: perspective(980px) translateY(0) rotateX(0deg) scale(1);
         filter: blur(0) brightness(1);
     }
     100% {
         opacity: 0;
-        transform: translateY(-20px) scale(0.95);
-        filter: blur(6px) brightness(0.5);
+        transform: perspective(980px) translateY(-18px) rotateX(8deg) scale(0.98);
+        filter: blur(4px) brightness(0.82);
     }
 }
 
-/* Fichas: entrada en cascada con dirección alternada */
+/* Fichas: entrada cinematográfica escalonada */
 .ficha-compact.prod-enter {
-    animation: prodFichaEnter 1.2s cubic-bezier(0.16, 1, 0.3, 1) var(--prod-delay, 0s) both;
+    animation: prodFichaEnter 1.18s cubic-bezier(0.19, 1, 0.22, 1) var(--prod-delay, 0s) both;
+    will-change: transform, opacity, filter;
 }
 
 @keyframes prodFichaEnter {
     0% {
         opacity: 0;
-        transform: translateY(40px) scale(0.92);
-        filter: blur(5px) brightness(0.6);
+        transform: perspective(980px) translate3d(var(--prod-shift-x, 0px), 34px, 0) rotateX(11deg) scale(0.95);
+        filter: blur(5px) brightness(0.78) saturate(0.88);
     }
-    55% {
-        opacity: 0.85;
-        transform: translateY(-3px) scale(1.01);
-        filter: blur(1px) brightness(1.08);
+    58% {
+        opacity: 0.9;
+        transform: perspective(980px) translate3d(0, -3px, 0) rotateX(-1deg) scale(1.006);
+        filter: blur(1.1px) brightness(1.05) saturate(1.04);
     }
-    80% {
+    84% {
         opacity: 0.98;
-        transform: translateY(1px) scale(0.998);
-        filter: blur(0) brightness(1.02);
+        transform: perspective(980px) translate3d(0, 1px, 0) rotateX(0deg) scale(0.998);
+        filter: blur(0) brightness(1.02) saturate(1.02);
     }
     100% {
         opacity: 1;
-        transform: translateY(0) scale(1);
-        filter: blur(0) brightness(1);
+        transform: perspective(980px) translate3d(0, 0, 0) rotateX(0deg) scale(1);
+        filter: blur(0) brightness(1) saturate(1);
     }
 }
 
-/* Fichas: salida con desvanecimiento lateral alternado */
+/* Fichas: salida premium con cola visual */
 .ficha-compact.prod-exit {
-    animation: prodFichaExit 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation: prodFichaExit 0.86s cubic-bezier(0.4, 0, 0.2, 1) var(--prod-exit-delay, 0s) both;
+    will-change: transform, opacity, filter;
 }
 
 @keyframes prodFichaExit {
     0% {
         opacity: 1;
-        transform: translateY(0) scale(1);
+        transform: perspective(980px) translate3d(0, 0, 0) rotateX(0deg) scale(1);
         filter: blur(0) brightness(1);
     }
     100% {
         opacity: 0;
-        transform: translateY(20px) scale(0.93);
-        filter: blur(6px) brightness(0.5);
+        transform: perspective(980px) translate3d(calc(var(--prod-shift-x, 0px) * -0.65), 24px, 0) rotateX(9deg) rotateY(var(--prod-exit-tilt, 0deg)) scale(0.95);
+        filter: blur(5px) brightness(0.78) saturate(0.86);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .autopartes-header-compact.prod-enter,
+    .autopartes-header-compact.prod-exit,
+    .ficha-compact.prod-enter,
+    .ficha-compact.prod-exit {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+        filter: none !important;
+    }
+}
+
+/* ====================================================== */
+/* JKB TYPOGRAPHY SYSTEM - AUTOPARTES ALIGN               */
+/* ====================================================== */
+.seccion-autopartes-compact {
+    font-family: var(--jk-font-body, "Open Sans", sans-serif);
+}
+
+.autopartes-header-compact h2 {
+    font-family: var(--jk-font-display, "Poppins", sans-serif);
+    font-weight: 700;
+    letter-spacing: -0.24px;
+    line-height: 1.12;
+    color: var(--jk-type-title, #1a2a4f);
+}
+
+.autopartes-contacto-compact span {
+    font-family: var(--jk-font-body, "Open Sans", sans-serif);
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.35;
+    color: var(--jk-type-subtitle, #2e4e7d);
+}
+
+.autopartes-contacto-compact a {
+    font-family: var(--jk-font-body, "Open Sans", sans-serif);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+.ficha-categoria-compact {
+    font-family: var(--jk-font-display, "Poppins", sans-serif);
+    font-weight: 700;
+    letter-spacing: -0.14px;
+    line-height: 1.14;
+    color: #173762;
+}
+
+.ficha-descripcion-compact {
+    font-family: var(--jk-font-body, "Open Sans", sans-serif);
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.46;
+    color: #4d6585;
+}
+
+.btn-wa-compact {
+    font-family: var(--jk-font-body, "Open Sans", sans-serif);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+@media (max-width: 900px) {
+    .autopartes-header-compact h2 {
+        line-height: 1.16;
+        letter-spacing: -0.18px;
+    }
+
+    .ficha-categoria-compact {
+        line-height: 1.18;
+    }
+
+    .ficha-descripcion-compact {
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .autopartes-header-compact h2 {
+        line-height: 1.18;
+        letter-spacing: -0.14px;
+    }
+
+    .ficha-categoria-compact {
+        letter-spacing: -0.1px;
+    }
+
+    .ficha-descripcion-compact {
+        font-size: clamp(0.8rem, 3.4vw, 0.88rem);
+        line-height: 1.52;
     }
 }

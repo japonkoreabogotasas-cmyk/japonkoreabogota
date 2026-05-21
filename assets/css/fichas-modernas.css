@@ -142,7 +142,6 @@
     }
 }
 
-
 /* ====================================================== */
 /* COLORES COMERCIALES - AZUL Y AMARILLO                 */
 /* Efectos fade sin alterar estructura                   */
@@ -180,7 +179,6 @@
 .hero-split-final-btn:hover {
     background: #e07c00 !important;
 }
-
 
 /* ====================================================== */
 /* ESPACIO ENTRE ALMACÉN (SCROLL) Y HERO SPLIT FINAL     */
@@ -574,7 +572,6 @@ html, body {
     }
 }
 
-
 /* ====================================================== */
 /* NUESTRAS MARCAS - COMPONENTE ÉPICO                    */
 /* Grid responsivo | Efectos hover | Diseño premium       */
@@ -946,7 +943,6 @@ html, body {
 
 /* Animación de entrada - manejada por reveal-component */
 
-
 /* ====================================================== */
 /* ESPACIO ENTRE MARCAS Y ALMACÉN                        */
 /* ====================================================== */
@@ -957,7 +953,6 @@ html, body {
 /* COMPRA CON NOSOTROS - DOS COLUMNAS                    */
 /* Mantiene colores y fuentes originales                 */
 /* ====================================================== */
-
 
 /* ====================================================== */
 /* COMPRA CON NOSOTROS - VERSIÓN ÚNICA Y LIMPIA          */
@@ -1180,12 +1175,10 @@ html, body {
     }
 }
 
-
 /* Video: bajado 6% adicional respecto al margen superior */
 .compra-dos-final-derecha {
     margin-top: 1% !important;
 }
-
 
 /* Tamaño del video: reducido 12% (de 1.68 a 1.48) */
 .compra-dos-final-video video {
@@ -1193,13 +1186,11 @@ html, body {
     transition: transform 0.3s ease !important;
 }
 
-
 /* Espacio adicional superior e inferior del componente */
 .compra-dos-final {
     margin-top: 6% !important;
     margin-bottom: 6% !important;
 }
-
 
 /* Video como capa inferior - sin superposición */
 .compra-dos-final-video {
@@ -1231,7 +1222,6 @@ html, body {
     position: relative !important;
     z-index: 11 !important;
 }
-
 
 /* ====================================================== */
 /* BLOQUEAR SCROLL INTERNO DEL COMPONENTE                */
@@ -1283,7 +1273,6 @@ html {
     height: auto !important;
 }
 
-
 /* ====================================================== */
 /* VIDEO DEBAJO DEL TEXTO - SIN SUPERPOSICIÓN            */
 /* ====================================================== */
@@ -1327,9 +1316,6 @@ html {
     z-index: 20 !important;
 }
 
-
-
-
 /* ====================================================== */
 /* BOTÓN LLAMAR AHORA (después de compra-dos-final)      */
 /* Subir 6% - reducir espacio superior                   */
@@ -1350,7 +1336,6 @@ html {
         margin-top: -60px !important;
     }
 }
-
 
 /* ====================================================== */
 /* SUBIR BOTÓN LLAMAR AHORA - MOVIMIENTO AGRESIVO        */
@@ -1379,7 +1364,6 @@ html {
         margin-top: -120px !important;
     }
 }
-
 
 /* ====================================================== */
 /* BOTÓN LLAMAR AHORA - EXTREMADAMENTE PEGADO            */
@@ -1412,7 +1396,6 @@ html {
     }
 }
 
-
 /* ====================================================== */
 /* BOTÓN LLAMAR AHORA - CORRECCIÓN DIRECTA               */
 /* Reducir espacio superior del contenedor del botón     */
@@ -1440,7 +1423,6 @@ html {
         margin-top: -75px !important;
     }
 }
-
 
 /* ====================================================== */
 /* REDUCIR LOGOS BANCARIOS EN 90%                        */
@@ -1470,132 +1452,16 @@ html {
     }
 }
 
-
 /* ====================================================== */
 /* AUMENTAR IMÁGENES DE MOTOR, CARROCERÍA Y REFRIGERACIÓN 24% */
 /* ====================================================== */
-
-
-
-
-
-
-
-
-
-
-
 
 /* ====================================================== */
 /* VIDEO INTRODUCTORIO - CENTRADO Y AJUSTADO             */
 /* Configuración final estable                           */
 /* ====================================================== */
 
-.video-banner {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto 40px auto;
-    overflow: hidden;
-    border-radius: 16px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-}
-
-.video-banner video {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
-/* Responsive - mantener centrado en todas las pantallas */
-@media (max-width: 1200px) {
-    .video-banner {
-        max-width: 95%;
-        margin: 0 auto 35px auto;
-    }
-}
-
-@media (max-width: 992px) {
-    .video-banner {
-        max-width: 95%;
-        margin: 0 auto 30px auto;
-        border-radius: 14px;
-    }
-}
-
-@media (max-width: 768px) {
-    .video-banner {
-        max-width: 100%;
-        margin: 0 auto 25px auto;
-        border-radius: 12px;
-    }
-}
-
-@media (max-width: 480px) {
-    .video-banner {
-        margin: 0 auto 20px auto;
-        border-radius: 10px;
-    }
-}
-
-
-/* ====================================================== */
-/* VIDEO - PEGADO A TOPE (SIN ESPACIO LATERAL)           */
-/* Ancho completo 100% desde borde a borde               */
-/* ====================================================== */
-
-.video-banner {
-    position: relative;
-    width: 100%;
-    margin: 0 0 36.4px 0;
-    overflow: hidden;
-}
-
-.video-banner video {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
-/* Eliminar cualquier borde, sombra o espacio lateral */
-.video-banner {
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    max-width: none !important;
-}
-
-/* Responsive - mantener 100% en todas las pantallas */
-@media (max-width: 1200px) {
-    .video-banner {
-        width: 100%;
-        margin: 0 0 31.85px 0;
-    }
-}
-
-@media (max-width: 992px) {
-    .video-banner {
-        width: 100%;
-        margin: 0 0 27.3px 0;
-    }
-}
-
-@media (max-width: 768px) {
-    .video-banner {
-        width: 100%;
-        margin: 0 0 22.75px 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .video-banner {
-        width: 100%;
-        margin: 0 0 18.2px 0;
-    }
-}
-
-
+/* Video banner genérico - limpio, delegado a .jkb-video-hero */
 
 /* ====================================================== */
 /* JKB ULTRA-MINIMAL YELLOW COMPACT FOOTER - FINAL DESIGN */
@@ -1603,20 +1469,54 @@ html {
 
 :root {
   --jkb-yellow-light: #FFD54F;
+  --jkb-fusion-gold: #ffe7a1;
+  --jkb-fusion-cream: #fff4c6;
+  --jkb-fusion-amber: #ffe082;
   --jkb-blue-deep: #1a2a4f;
   --jkb-text: #2d3436;
   --jkb-border: rgba(26, 42, 79, 0.12);
   --jkb-transition: all 0.25s ease;
 }
 
+.jkb-postsales-fusion {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      180deg,
+      var(--jkb-fusion-gold) 0%,
+      var(--jkb-fusion-cream) 32%,
+      var(--jkb-fusion-amber) 55%,
+      var(--jkb-fusion-cream) 78%,
+      var(--jkb-fusion-gold) 100%
+    );
+  background-size: 100% 240%;
+  animation: jkbFooterBlend 24s ease-in-out infinite;
+}
+
 .f-minimal-yellow {
-  background-color: var(--jkb-yellow-light);
+  position: relative;
+  margin-top: 0;
+  background: transparent;
+  animation: none;
   color: var(--jkb-text);
-  padding: 40px 0 20px;
+  padding: 34px 0 20px;
   font-family: 'Inter', sans-serif;
-  border-top: 5px solid var(--jkb-blue-deep);
+  border-top: 0;
   width: 100%;
   box-sizing: border-box;
+  overflow: visible;
+}
+
+.f-minimal-yellow::before {
+  content: none;
+}
+
+@keyframes jkbFooterBlend {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 52%; }
+  100% { background-position: 0% 50%; }
 }
 
 .f-container {
@@ -1725,10 +1625,6 @@ html {
 
 /* ====================================================== */
 
-
-
-
-
 /* ====================================================== */
 /* ALMACÉN JKB - BLOQUE HORIZONTAL COMPACTO              */
 /* El componente cabe dentro del viewport y conserva      */
@@ -1750,6 +1646,7 @@ html {
     background: transparent;
     margin: 0;
     overflow: hidden;
+    --almacen-scene-ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 .almacen-sticky {
     position: relative;
@@ -1765,6 +1662,44 @@ html {
     padding: clamp(12px, 1.8vw, 26px) 24px;
     overflow: visible;
     background: transparent;
+    isolation: isolate;
+    transition: transform 0.95s var(--almacen-scene-ease), opacity 0.82s ease, filter 0.82s ease;
+    will-change: transform, opacity, filter;
+}
+.almacen-sticky::before,
+.almacen-sticky::after {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    border-radius: 999px;
+    filter: blur(28px);
+    mix-blend-mode: multiply;
+    opacity: 0.72;
+}
+.almacen-sticky::before {
+    width: min(30vw, 360px);
+    height: min(72vh, 640px);
+    left: clamp(-8px, -1.2vw, -2px);
+    top: 50%;
+    transform: translateY(-50%);
+    clip-path: polygon(0 0, 100% 8%, 84% 92%, 0 100%);
+    background:
+        radial-gradient(ellipse 118% 88% at 6% 50%, rgba(224, 46, 46, 0.24) 0%, rgba(224, 46, 46, 0.05) 42%, rgba(224, 46, 46, 0) 76%),
+        radial-gradient(ellipse 96% 72% at 30% 50%, rgba(255, 192, 72, 0.17) 0%, rgba(255, 192, 72, 0.06) 38%, rgba(255, 192, 72, 0) 72%),
+        repeating-radial-gradient(ellipse at 14% 50%, rgba(255, 198, 82, 0.1) 0 2px, rgba(255, 198, 82, 0) 2px 18px);
+}
+.almacen-sticky::after {
+    width: min(30vw, 360px);
+    height: min(72vh, 640px);
+    right: clamp(-8px, -1.2vw, -2px);
+    top: 50%;
+    transform: translateY(-50%) scaleX(-1);
+    clip-path: polygon(0 8%, 100% 0, 100% 100%, 16% 92%);
+    background:
+        radial-gradient(ellipse 118% 88% at 6% 50%, rgba(224, 46, 46, 0.24) 0%, rgba(224, 46, 46, 0.05) 42%, rgba(224, 46, 46, 0) 76%),
+        radial-gradient(ellipse 96% 72% at 30% 50%, rgba(255, 192, 72, 0.17) 0%, rgba(255, 192, 72, 0.06) 38%, rgba(255, 192, 72, 0) 72%),
+        repeating-radial-gradient(ellipse at 14% 50%, rgba(255, 198, 82, 0.1) 0 2px, rgba(255, 198, 82, 0) 2px 18px);
 }
 .almacen-copy {
     position: relative;
@@ -1782,6 +1717,7 @@ html {
     margin-right: 0;
     border-radius: 52px 36px 64px 42px / 46px 58px 50px 62px;
     overflow: hidden;
+    z-index: 2;
     box-shadow: 0 22px 64px rgba(18,31,47,0.18), 0 0 0 1px rgba(20,32,46,0.08), inset 0 0 0 1px rgba(255,255,255,0.72);
     background:
         radial-gradient(circle at 50% 48%, rgba(255,255,255,0.78), transparent 54%),
@@ -1789,6 +1725,79 @@ html {
     transform: translateY(var(--almacen-visual-y));
     transition: border-radius 0.18s linear, box-shadow 0.3s ease;
     will-change: transform, border-radius;
+}
+.almacen-txt.txt-1,
+.almacen-txt.txt-2,
+.almacen-overlay,
+.almacen-sticky::before,
+.almacen-sticky::after {
+    transition:
+        opacity 0.72s ease,
+        transform 0.9s var(--almacen-scene-ease),
+        filter 0.72s ease;
+}
+.almacen-visual {
+    transition:
+        border-radius 0.18s linear,
+        box-shadow 0.3s ease,
+        opacity 0.72s ease,
+        filter 0.72s ease;
+}
+.almacen-scroll.almacen-enter .almacen-sticky {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    filter: blur(0) saturate(1);
+}
+.almacen-scroll.almacen-enter .almacen-txt.txt-1,
+.almacen-scroll.almacen-enter .almacen-txt.txt-2 {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    filter: blur(0);
+}
+.almacen-scroll.almacen-enter .almacen-txt.txt-1 {
+    transition-delay: 0.1s;
+}
+.almacen-scroll.almacen-enter .almacen-txt.txt-2 {
+    transition-delay: 0.18s;
+}
+.almacen-scroll.almacen-enter .almacen-visual {
+    opacity: 1;
+    filter: saturate(1) contrast(1);
+}
+.almacen-scroll.almacen-enter .almacen-overlay {
+    opacity: 1;
+}
+.almacen-scroll.almacen-enter .almacen-sticky::before,
+.almacen-scroll.almacen-enter .almacen-sticky::after {
+    opacity: 0.72;
+    filter: blur(28px);
+}
+.almacen-scroll.almacen-exit .almacen-sticky {
+    transform: translateY(36px) scale(0.972);
+    opacity: 0.62;
+    filter: blur(3px) saturate(0.88);
+}
+.almacen-scroll.almacen-exit .almacen-txt.txt-1 {
+    transform: translate3d(-26px, 14px, 0);
+    opacity: 0;
+    filter: blur(7px);
+}
+.almacen-scroll.almacen-exit .almacen-txt.txt-2 {
+    transform: translate3d(26px, 10px, 0);
+    opacity: 0;
+    filter: blur(7px);
+}
+.almacen-scroll.almacen-exit .almacen-visual {
+    opacity: 0.72;
+    filter: saturate(0.84) contrast(0.94);
+}
+.almacen-scroll.almacen-exit .almacen-overlay {
+    opacity: 0.08;
+}
+.almacen-scroll.almacen-exit .almacen-sticky::before,
+.almacen-scroll.almacen-exit .almacen-sticky::after {
+    opacity: 0;
+    filter: blur(40px);
 }
 .almacen-visual:hover {
     border-radius: 64px 42px 72px 50px / 58px 68px 56px 74px;
@@ -1826,7 +1835,7 @@ html {
     max-height: none;
     display: block;
     object-fit: cover;
-    object-position: center 70%;
+    object-position: center center;
     background: transparent;
     transform: scale(1.035);
     transform-origin: center center;
@@ -1844,14 +1853,14 @@ html {
     opacity: 0;
     z-index: 0;
 }
-/* Overlay cinemático - viñeta oscura en 4 márgenes */
+/* Overlay oscuro centrado - viñeta envolvente */
 .almacen-overlay {
     position: absolute;
     top: 0; left: 0;
     width: 100%;
     height: 100%;
     background:
-        radial-gradient(ellipse 100% 80% at 50% 50%, transparent 44%, rgba(255,255,255,0.12) 100%);
+        radial-gradient(ellipse 100% 80% at 50% 50%, transparent 38%, rgba(0,0,0,0.18) 60%, rgba(0,0,0,0.45) 80%, rgba(0,0,0,0.7) 100%);
     z-index: 1;
     pointer-events: none;
     transition: opacity 0.3s ease;
@@ -1891,19 +1900,118 @@ html {
 }
 .almacen-txt.txt-1 {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 1 / span 2;
     justify-self: end;
     align-self: center;
-    max-width: 190px;
+    width: 100%;
+    max-width: 230px;
     text-align: right;
+    padding: 0 18px 0 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 22px;
+}
+.almacen-txt.txt-1 h2 {
+    display: inline-block;
+    font-size: clamp(1.5rem, 2.6vw, 2.2rem);
+    font-weight: 800;
+    color: #000;
+    text-shadow:
+        -1px -1px 0 #fff, 1px -1px 0 #fff,
+        -1px 1px 0 #fff, 1px 1px 0 #fff,
+        0 18px 42px rgba(16,24,32,0.12);
+    margin: 0;
+    letter-spacing: -0.01em;
+    line-height: 1.08;
+    position: relative;
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    filter: blur(0);
+    transition: transform 0.45s cubic-bezier(0.23, 1, 0.32, 1), text-shadow 0.45s ease, filter 0.45s ease;
+    animation: almacenTxtEntrance 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.almacen-txt.txt-1 h2:hover {
+    transform: perspective(900px) rotateY(-11deg) rotateX(2deg) translateZ(6px) scale(1.01);
+    text-shadow:
+        -1px -1px 0 #fff, 1px -1px 0 #fff,
+        -1px 1px 0 #fff, 1px 1px 0 #fff,
+        0 24px 46px rgba(16,24,32,0.2);
+    filter: saturate(1.05);
+}
+
+/* ===== BOTONES COLUMNA IZQUIERDA (Teléfono + Visítanos) ===== */
+.almacen-telefono {
+    display: inline-block;
+    margin: 0;
+}
+.almacen-tel-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 16px;
+    background: transparent;
+    color: #4a5568;
+    border-radius: 4px;
+    border: 1px solid #cbd5e0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.8rem;
+    letter-spacing: 0.01em;
+    transition: all 0.2s ease;
+}
+.almacen-tel-link:hover {
+    background: #f7fafc;
+    color: #2d3748;
+    border-color: #a0aec0;
+}
+.almacen-tel-icono {
+    font-size: 0.85rem;
+    line-height: 1;
+}
+.almacen-tel-numero {
+    white-space: nowrap;
+}
+
+@keyframes almacenTxtEntrance {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px) scale(0.92);
+        filter: blur(4px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(4px) scale(1.01);
+        filter: blur(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+        filter: blur(0);
+    }
 }
 .almacen-txt.txt-2 {
     grid-column: 3;
-    grid-row: 1;
+    grid-row: 1 / span 2;
     justify-self: start;
     align-self: center;
     text-align: left;
-    max-width: 190px;
+    text-indent: 0;
+    max-width: 260px;
+    line-height: 1.5;
+    font-size: clamp(0.82rem, 0.9vw, 0.95rem);
+    padding-left: 4px;
+}
+/* txt-4: dirección en mobile (oculto en desktop) */
+.almacen-txt.txt-4 {
+    display: none;
+}
+.almacen-desk-text {
+    display: block;
+}
+.almacen-mobile-text {
+    display: none;
 }
 .almacen-txt.txt-3 {
     grid-column: 1;
@@ -1915,10 +2023,6 @@ html {
 }
 .almacen-txt.txt-3 a {
     filter: blur(0px);
-}
-.almacen-btn {
-    filter: none !important;
-    backdrop-filter: none !important;
 }
 .txt-1 { top: auto; }
 .txt-2 { top: auto; }
@@ -1942,38 +2046,55 @@ html {
 .almacen-btn {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    padding: 13px 30px;
-    background: #25D366;
-    color: #fff;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 0.95rem;
+    gap: 7px;
+    padding: 8px 16px;
+    background: transparent;
+    color: #4a5568;
+    border-radius: 4px;
+    border: 1px solid #cbd5e0;
+    font-weight: 500;
+    font-size: 0.8rem;
     text-decoration: none;
     pointer-events: auto;
-    box-shadow: 0 4px 20px rgba(37,211,102,0.3), 0 0 40px rgba(37,211,102,0.1);
-    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-    position: relative;
-    overflow: hidden;
-}
-.almacen-btn::before {
-    content: '';
-    position: absolute;
-    top: 0; left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
-    transition: left 0.6s ease;
-}
-.almacen-btn:hover::before {
-    left: 100%;
+    transition: all 0.2s ease;
 }
 .almacen-btn:hover {
-    background: #128c7e;
-    transform: translateY(-3px) scale(1.03);
-    box-shadow: 0 8px 30px rgba(37,211,102,0.4), 0 0 60px rgba(37,211,102,0.15);
+    background: #f7fafc;
+    color: #2d3748;
+    border-color: #a0aec0;
+}
+.almacen-btn .fab {
+    font-size: 0.85rem;
+    line-height: 1;
 }
 @media (max-width: 1025px) {
+    .almacen-scroll.almacen-enter .almacen-sticky,
+    .almacen-scroll.almacen-exit .almacen-sticky,
+    .almacen-scroll.almacen-enter .almacen-txt.txt-1,
+    .almacen-scroll.almacen-exit .almacen-txt.txt-1,
+    .almacen-scroll.almacen-enter .almacen-txt.txt-2,
+    .almacen-scroll.almacen-exit .almacen-txt.txt-2,
+    .almacen-scroll.almacen-enter .almacen-visual,
+    .almacen-scroll.almacen-exit .almacen-visual,
+    .almacen-scroll.almacen-enter .almacen-overlay,
+    .almacen-scroll.almacen-exit .almacen-overlay {
+        transform: none;
+        opacity: 1;
+        filter: none;
+    }
+    .almacen-sticky::before,
+    .almacen-sticky::after {
+        display: none;
+    }
+    .almacen-desk-text {
+        display: none;
+    }
+    .almacen-mobile-text {
+        display: block;
+    }
+    .almacen-txt.txt-4 {
+        display: block;
+    }
     .almacen-scroll {
         height: auto;
         min-height: auto;
@@ -2022,36 +2143,34 @@ html {
     .almacen-scroll.is-mobile-active .almacen-copy::before {
         opacity: 1;
     }
-    .almacen-copy::after {
-        content: '';
-        position: absolute;
-        top: 22px;
-        left: 50%;
-        width: 58%;
-        height: 2px;
-        max-width: 240px;
-        background: linear-gradient(90deg, transparent, #25D366, transparent);
-        transform: translateX(-50%);
-        opacity: 0;
-        transition: opacity 0.42s ease;
-        pointer-events: none;
-    }
-    .almacen-scroll.is-mobile-active .almacen-copy::after {
-        opacity: 0.78;
-    }
     .almacen-txt {
         text-align: center;
+        width: 100%;
     }
-    .almacen-txt.txt-2,
-    .almacen-txt.txt-3 {
+    .almacen-txt.txt-2 {
+        display: none;
+    }
+    .almacen-txt.txt-3,
+    .almacen-txt.txt-4 {
         justify-self: center;
+        align-self: center;
         text-align: center;
+        text-indent: 0;
+        width: 100%;
+    }
+    .almacen-txt.txt-3 {
+        display: flex;
+        justify-content: center;
     }
     .almacen-scroll.is-mobile-active .almacen-txt {
         animation: almacenMobileEnter 0.72s cubic-bezier(0.23, 1, 0.32, 1) forwards;
     }
     .almacen-txt.txt-1 {
         animation-delay: 0.08s;
+        gap: 6vh 0;
+    }
+    .almacen-btn {
+        margin-top: calc(-6vh - 8px);
     }
     .almacen-txt.txt-2 {
         animation-delay: 0.22s;
@@ -2059,23 +2178,62 @@ html {
     .almacen-txt.txt-3 {
         animation-delay: 0.36s;
     }
+    .almacen-txt.txt-4 {
+        animation-delay: 0.50s;
+        margin-top: 5vh;
+    }
     .almacen-txt h2 {
-        color: #fff;
-        font-size: clamp(2rem, 7vw, 3rem);
-        margin-bottom: 12px;
-        text-shadow: 0 18px 42px rgba(0,0,0,0.55);
+        display: block !important;
+        color: #fff !important;
+        font-size: clamp(2rem, 7vw, 3rem) !important;
+        font-weight: 700 !important;
+        letter-spacing: 0 !important;
+        line-height: 1.02 !important;
+        margin-bottom: 24px;
+        text-shadow:
+            0 0 6px rgba(255,255,255,0.5),
+            0 0 14px rgba(255,255,255,0.3),
+            0 18px 42px rgba(0,0,0,0.65) !important;
+        opacity: 1 !important;
+        transform: none !important;
+        filter: none !important;
+        animation: none !important;
     }
     .almacen-txt p {
         color: rgba(255,255,255,0.86);
         font-size: clamp(1rem, 2.4vw, 1.16rem);
-        margin-bottom: 22px;
+        margin-bottom: calc(24px + 3vh);
         text-shadow: 0 12px 32px rgba(0,0,0,0.52);
+    }
+    .almacen-telefono {
+        margin-bottom: 12px;
+    }
+    .almacen-tel-link {
+        background: #fff;
+        color: #1a202c;
+        border: 1px solid #fff;
+        font-weight: 600;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    }
+    .almacen-tel-link:hover {
+        background: #edf2f7;
+        color: #000;
+        border-color: #edf2f7;
     }
     .almacen-btn {
         width: 100%;
         justify-content: center;
         max-width: 260px;
-        box-shadow: 0 10px 28px rgba(37,211,102,0.34), 0 0 44px rgba(37,211,102,0.18);
+        background: #fff;
+        color: #1a202c;
+        border: 1px solid #fff;
+        font-weight: 600;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    }
+    .almacen-btn:hover {
+        background: #edf2f7;
+        color: #000;
+        border-color: #edf2f7;
     }
 }
 @keyframes almacenMobileEnter {
@@ -2088,6 +2246,32 @@ html {
         opacity: 1;
         transform: translateY(0) scale(1);
         filter: blur(0);
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .almacen-scroll .almacen-sticky,
+    .almacen-scroll .almacen-txt.txt-1,
+    .almacen-scroll .almacen-txt.txt-2,
+    .almacen-scroll .almacen-visual,
+    .almacen-scroll .almacen-overlay,
+    .almacen-scroll .almacen-sticky::before,
+    .almacen-scroll .almacen-sticky::after {
+        transition: none !important;
+        animation: none !important;
+    }
+    .almacen-scroll.almacen-enter .almacen-sticky,
+    .almacen-scroll.almacen-exit .almacen-sticky,
+    .almacen-scroll.almacen-enter .almacen-txt.txt-1,
+    .almacen-scroll.almacen-exit .almacen-txt.txt-1,
+    .almacen-scroll.almacen-enter .almacen-txt.txt-2,
+    .almacen-scroll.almacen-exit .almacen-txt.txt-2,
+    .almacen-scroll.almacen-enter .almacen-visual,
+    .almacen-scroll.almacen-exit .almacen-visual,
+    .almacen-scroll.almacen-enter .almacen-overlay,
+    .almacen-scroll.almacen-exit .almacen-overlay {
+        transform: none !important;
+        opacity: 1 !important;
+        filter: none !important;
     }
 }
 @media (max-width: 768px) {
@@ -2175,7 +2359,7 @@ html {
 .equipo-comercial__media {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 4 / 3;
     margin: 0;
     border-radius: 28px 16px 42px 20px / 22px 38px 18px 44px;
     overflow: hidden;
@@ -2217,12 +2401,10 @@ html {
     object-position: left center;
     display: block;
     background: #0e1521;
-    transform: scale(1.38);
     transition: transform 0.4s ease, filter 0.4s ease;
 }
 
 .equipo-comercial__media:hover .equipo-comercial__img {
-    transform: scale(1.40);
     filter: saturate(1.06) contrast(1.02);
 }
 
@@ -2286,34 +2468,48 @@ html {
     line-height: 1.5;
 }
 
-.equipo-comercial__btn {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    min-height: 44px;
+.equipo-comercial__actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
     margin-top: 10px;
-    padding: 0 24px;
-    border: 1px solid #1a2a4f;
-    border-radius: 999px;
-    overflow: hidden;
-    background: #1a2a4f;
-    color: #fff;
-    font-size: clamp(0.78rem, 0.85vw, 0.9rem);
-    font-weight: 600;
+    max-width: 420px;
+}
+
+.equipo-comercial__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    min-height: 37px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
     text-decoration: none;
-    box-shadow: 0 4px 15px rgba(26,42,79,0.2);
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    transition: background-color 0.22s ease, color 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.equipo-comercial__btn--primary {
+    color: #ffffff;
+    background: linear-gradient(135deg, #1f4f98 0%, #2f78e7 100%);
+    box-shadow: 0 10px 18px rgba(25, 63, 127, 0.2);
+}
+
+.equipo-comercial__btn--secondary {
+    color: #f4f8ff;
+    background: #173f77;
 }
 
 .equipo-comercial__btn:hover,
 .equipo-comercial__btn:focus-visible {
-    color: #fff;
-    background: #25D366;
-    border-color: #25D366;
-    box-shadow: 0 8px 25px rgba(37,211,102,0.3);
-    transform: translateY(-2px);
+    background: #ffffff !important;
+    color: #1f4f98 !important;
+    border-color: #1f4f98;
+    box-shadow: 0 8px 16px rgba(31, 79, 152, 0.18);
     outline: none;
 }
 
@@ -2338,11 +2534,19 @@ html {
 
 @media (max-width: 768px) {
     .equipo-comercial {
-        padding: 42px 18px;
+        padding: 32px 16px;
     }
     .equipo-comercial__media {
-        min-height: 245px;
-        border-radius: 24px 12px 32px 14px;
+        transform: none;
+        min-height: 220px;
+        border-radius: 18px 10px 24px 12px;
+        box-shadow: 0 12px 40px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.06);
+    }
+    .equipo-comercial__media:hover {
+        transform: none;
+    }
+    .equipo-comercial__media::after {
+        opacity: 0.3;
     }
     .equipo-comercial__content {
         text-align: center;
@@ -2351,14 +2555,61 @@ html {
         margin-inline: auto;
     }
     .equipo-comercial h2 {
-        font-size: clamp(1.85rem, 8vw, 2.45rem);
+        font-size: clamp(1.4rem, 6vw, 1.85rem);
     }
     .equipo-comercial__content p:not(.equipo-comercial__eyebrow) {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
+    }
+    .equipo-comercial__actions {
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .equipo-comercial__btn {
         width: 100%;
-        max-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .equipo-comercial {
+        padding: 20px 10px;
+    }
+    .equipo-comercial__container {
+        gap: 12px;
+    }
+    .equipo-comercial__media {
+        min-height: 170px;
+        border-radius: 14px 8px 18px 10px;
+        box-shadow: 0 8px 28px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.04);
+    }
+    .equipo-comercial__content {
+        padding: 10px 4px;
+    }
+    .equipo-comercial__line {
+        width: 50px;
+        height: 2px;
+        margin-bottom: 12px;
+    }
+    .equipo-comercial h2 {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+    .equipo-comercial__content p:not(.equipo-comercial__eyebrow) {
+        font-size: 0.82rem;
+        margin-bottom: 6px;
+    }
+    .equipo-comercial__actions {
+        grid-template-columns: 1fr;
+        gap: 7px;
+        margin-top: 8px;
+    }
+    .equipo-comercial__btn {
+        width: 100%;
+        font-size: 0.81rem;
+        min-height: 40px;
+    }
+    .equipo-comercial__halo {
+        display: none;
     }
 }
 
@@ -2620,9 +2871,9 @@ html {
     align-items: center;
     gap: 3%;
     width: 100%;
-    max-width: none;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 20px;
     opacity: 0;
     transform: translateY(34px) scale(0.985);
     filter: blur(8px);
@@ -2635,6 +2886,45 @@ html {
     transform: translateY(0) scale(1);
     filter: blur(0);
 }
+
+/* ── Text-box: wrapper neon con borde azul milimétrico ── */
+.mensajeria-urbana__text-box {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: clamp(8px, 1.2vh, 18px);
+    padding: clamp(12px, 1.6vw, 24px);
+    border: 1px solid transparent;
+    border-radius: 14px;
+    background: rgba(0, 212, 255, 0.015);
+    position: relative;
+    transition:
+        border-color 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+        box-shadow 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+        background 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Estado visible: aparece el borde neón */
+.mensajeria-urbana.visible .mensajeria-urbana__text-box,
+.mensajeria-urbana:target .mensajeria-urbana__text-box {
+    border-color: #00d4ff;
+    box-shadow:
+        0 0 2px rgba(0, 212, 255, 0.12),
+        0 0 6px rgba(0, 212, 255, 0.08),
+        inset 0 0 2px rgba(0, 212, 255, 0.04);
+    background: rgba(0, 212, 255, 0.03);
+}
+
+/* Estado no visible: el borde se desvanece suavemente */
+.mensajeria-urbana:not(.visible):not(:target) .mensajeria-urbana__text-box {
+    border-color: transparent;
+    box-shadow: none;
+    background: transparent;
+}
+
+/* ── Fin text-box neon ── */
 
 .mensajeria-urbana__content {
     grid-column: 2;
@@ -2745,8 +3035,8 @@ html {
     margin: 0;
     color: #000000;
     font-family: 'Open Sans', sans-serif;
-    font-size: clamp(0.72rem, 0.8vw, 0.78rem);
-    line-height: 1.5;
+    font-size: clamp(0.92rem, 0.9vw, 1rem);
+    line-height: 1.58;
     text-shadow: none;
 }
 
@@ -2762,10 +3052,10 @@ html {
     align-items: center;
     justify-content: center;
     gap: 9px;
-    min-height: 40px;
+    min-height: 44px;
     padding: 0 22px;
     border-radius: 12px;
-    font-size: 0.72rem;
+    font-size: 0.86rem;
     font-weight: 700;
     text-decoration: none;
     letter-spacing: 0.02em;
@@ -2807,10 +3097,16 @@ html {
     box-shadow: none;
 }
 
+/* Teléfono junto al botón Llamar */
+.mensajeria-urbana__phone {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+}
+
 .mensajeria-urbana__coverage {
-    grid-column: 2;
-    grid-row: 2;
-    align-self: center;
     display: flex;
     align-items: center;
     transform-style: preserve-3d;
@@ -2824,14 +3120,14 @@ html {
 .mensajeria-urbana__grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 6px;
+    gap: 10px;
     width: 100%;
 }
 
 .mensajeria-urbana__item {
     position: relative;
     min-height: auto;
-    padding: 6px 0 6px 12px;
+    padding: 8px 0 8px 12px;
     overflow: visible;
     border: none;
     border-radius: 0;
@@ -2870,7 +3166,7 @@ html {
 
 .mensajeria-urbana__item strong {
     color: #000000;
-    font-size: 0.72rem;
+    font-size: clamp(0.9rem, 0.95vw, 1rem);
     line-height: 1.3;
     text-shadow: none;
 }
@@ -2879,15 +3175,142 @@ html {
     margin-top: 2px;
     color: #000000;
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.6rem;
-    line-height: 1.35;
+    font-size: clamp(0.82rem, 0.85vw, 0.94rem);
+    line-height: 1.48;
     text-shadow: none;
+}
+
+@media (min-width: 1026px) {
+    .mensajeria-urbana {
+        --mensajeria-photo-w: 46.75%;
+        --mensajeria-text-w: 35.7%;
+        --mensajeria-center-gap: 2.4%;
+    }
+
+    .mensajeria-urbana__container {
+        grid-template-columns: var(--mensajeria-photo-w) var(--mensajeria-text-w);
+        gap: var(--mensajeria-center-gap);
+        justify-content: center;
+        padding: 0;
+    }
+
+    .mensajeria-urbana__photo {
+        width: var(--mensajeria-photo-w);
+        left: calc(
+            (100% - (var(--mensajeria-photo-w) + var(--mensajeria-text-w) + var(--mensajeria-center-gap))) / 2
+        );
+    }
+}
+
+/* ── BREAKPOINT INTERMEDIO: tablets (769px - 1025px) ── */
+@media (max-width: 1025px) {
+    .mensajeria-urbana {
+        min-height: auto;
+        padding: clamp(40px, 6vw, 68px) clamp(20px, 4vw, 34px);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        background: linear-gradient(180deg, #ffffff 0%, #f6f8fc 100%);
+        perspective: none;
+    }
+
+    .mensajeria-urbana__photo {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        height: auto;
+        max-height: 45vh;
+        margin: 0 auto 24px;
+        display: block;
+        border-radius: 28px;
+        opacity: 0.9;
+        transform: translateY(0) scale(1);
+        box-shadow: 0 10px 35px rgba(0,0,0,0.18);
+    }
+
+    .mensajeria-urbana.photo-active .mensajeria-urbana__photo,
+    .mensajeria-urbana:target .mensajeria-urbana__photo {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    .mensajeria-urbana.photo-active:hover .mensajeria-urbana__photo,
+    .mensajeria-urbana:target:hover .mensajeria-urbana__photo {
+        border-radius: 40px;
+        transform: translateY(-2px) scale(1.02);
+        box-shadow: 0 14px 42px rgba(0,0,0,0.18);
+    }
+
+    .mensajeria-urbana__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: clamp(16px, 2.2vw, 24px);
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 0;
+        opacity: 1;
+        transform: none;
+        filter: none;
+        transition: none;
+    }
+
+    .mensajeria-urbana__text-box {
+        grid-column: 1;
+        grid-row: auto;
+        padding: clamp(12px, 2vw, 22px);
+        border-color: rgba(26, 42, 79, 0.14);
+        box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+        background: #ffffff;
+    }
+
+    .mensajeria-urbana__content {
+        max-width: none;
+    }
+
+    .mensajeria-urbana__coverage {
+        /* inside flex-box, no grid needed */
+    }
+
+    .mensajeria-urbana__title {
+        font-size: clamp(1.58rem, 3.3vw, 1.96rem);
+        line-height: 1.12;
+    }
+
+    .mensajeria-urbana__lead {
+        font-size: clamp(0.95rem, 1.35vw, 1.04rem);
+        line-height: 1.6;
+    }
+
+    .mensajeria-urbana:not(.visible):not(:target) .mensajeria-urbana__text-box {
+        border-color: rgba(26, 42, 79, 0.14);
+        box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+        background: #ffffff;
+    }
+
+    .mensajeria-urbana__photo.photo-enter,
+    .mensajeria-urbana__photo.photo-exit,
+    .mensajeria-urbana__content.text-enter,
+    .mensajeria-urbana__content.text-exit,
+    .mensajeria-urbana__coverage.text-enter,
+    .mensajeria-urbana__coverage.text-exit {
+        animation: none !important;
+    }
+
+    .mensajeria-urbana__content.text-enter,
+    .mensajeria-urbana__content.text-exit,
+    .mensajeria-urbana__coverage.text-enter,
+    .mensajeria-urbana__coverage.text-exit {
+        opacity: 1 !important;
+        transform: none !important;
+        filter: none !important;
+        clip-path: inset(0 0 0 0) !important;
+    }
 }
 
 @media (max-width: 768px) {
     .mensajeria-urbana {
-        min-height: auto;
-        padding: 42px 20px;
+        padding: 36px 18px;
         align-items: stretch;
     }
 
@@ -2926,32 +3349,56 @@ html {
     .mensajeria-urbana__container {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        gap: 18px;
+        gap: 16px;
+    }
+
+    .mensajeria-urbana__text-box {
+        grid-column: 1;
+        grid-row: auto;
+        padding: clamp(12px, 2.8vw, 18px);
+        border-radius: 10px;
     }
 
     .mensajeria-urbana__content {
-        grid-column: 1;
-        grid-row: auto;
         max-width: none;
     }
 
     .mensajeria-urbana__coverage {
-        grid-column: 1;
-        grid-row: auto;
+        /* inside flex-box, no grid needed */
     }
 
     .mensajeria-urbana__grid {
         grid-template-columns: 1fr;
+        gap: 11px;
     }
 
     .mensajeria-urbana__item {
         min-height: auto;
+        padding-left: 14px;
+    }
+
+    .mensajeria-urbana__title {
+        font-size: clamp(1.42rem, 4.6vw, 1.74rem);
+        line-height: 1.14;
+    }
+
+    .mensajeria-urbana__lead {
+        font-size: 0.96rem;
+    }
+
+    .mensajeria-urbana__btn {
+        min-height: 46px;
+        font-size: 0.9rem;
+    }
+
+    .mensajeria-urbana__phone {
+        font-size: 0.84rem;
     }
 }
 
 @media (max-width: 480px) {
     .mensajeria-urbana {
-        padding: 34px 16px;
+        padding: 30px 14px;
     }
 
     .mensajeria-urbana__photo {
@@ -2959,20 +3406,47 @@ html {
     }
 
     .mensajeria-urbana__title {
-        font-size: 1.72rem;
+        font-size: 1.4rem;
+        line-height: 1.15;
     }
 
     .mensajeria-urbana__lead {
         font-size: 0.92rem;
+        line-height: 1.55;
     }
 
-    .mensajeria-urbana__actions,
-    .mensajeria-urbana__btn {
+    .mensajeria-urbana__actions {
+        flex-direction: column;
         width: 100%;
     }
 
+    .mensajeria-urbana__btn {
+        width: 100%;
+        justify-content: center;
+        min-height: 48px;
+        font-size: 0.92rem;
+    }
+
+    /* El teléfono va debajo de "Llamar" en mobile */
+    .mensajeria-urbana__phone {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 4px;
+        font-size: 0.82rem;
+    }
+
     .mensajeria-urbana__content {
-        padding: 18px;
+        padding: 0;
+    }
+
+    .mensajeria-urbana__item strong {
+        font-size: 0.94rem;
+    }
+
+    .mensajeria-urbana__item span {
+        font-size: 0.86rem;
+        line-height: 1.45;
     }
 }
 
@@ -2984,63 +3458,2640 @@ html {
     .mensajeria-urbana::before {
         transition: none;
     }
+
+    .mensajeria-urbana__text-box {
+        transition: none;
+        border-color: #00d4ff;
+        box-shadow:
+            0 0 2px rgba(0, 212, 255, 0.12),
+            0 0 6px rgba(0, 212, 255, 0.08);
+    }
 }
 
 /* ====================================================== */
-/* VIDEO HERO PRINCIPAL JKB                               */
+/* VIDEO HERO PRINCIPAL JKB - FULL VIEWPORT CINEMATOGRÁFICO */
 /* ====================================================== */
 .video-banner.jkb-video-hero {
     position: relative;
-    width: 100%;
-    height: min(680px, calc(100svh - 6rem));
-    min-height: 460px;
+    width: 100vw;
+    max-width: 100%;
+    height: calc(100svh - 6rem);
+    min-height: 500px;
     margin: 0;
     overflow: hidden;
-    background: #1a2a4f;
+    background: #000;
     isolation: isolate;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 .video-banner.jkb-video-hero video {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
     object-position: center center;
+    z-index: 0;
 }
 
+/* 
+ * OVERLAY CINEMATOGRÁFICO PROFESIONAL
+ * Capa ::before → viñeta elíptica + letterbox superior/inferior
+ */
 .video-banner.jkb-video-hero::before {
     content: "";
     position: absolute;
     inset: 0;
     z-index: 1;
-    background: linear-gradient(180deg, rgba(0,0,0,0.18) 0%, transparent 40%, rgba(0,0,0,0.12) 100%);
+    background:
+        /* Viñeta elíptica: centro brillante, bordes oscurecidos */
+        radial-gradient(ellipse 85% 80% at 50% 50%, transparent 40%, rgba(0,0,0,0.35) 70%, rgba(0,0,0,0.7) 90%, #000 100%),
+        /* Letterbox: barras superior e inferior con degradado */
+        linear-gradient(180deg, #000 0%, rgba(0,0,0,0.6) 8%, transparent 20%, transparent 80%, rgba(0,0,0,0.6) 92%, #000 100%);
     pointer-events: none;
 }
 
+/* 
+ * Capa ::after → profundidad adicional + grounding inferior
+ */
 .video-banner.jkb-video-hero::after {
-    content: none;
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background:
+        /* Viñeta secundaria más cerrada para enfoque central */
+        radial-gradient(ellipse 60% 55% at 50% 50%, transparent 50%, rgba(0,0,0,0.25) 78%, rgba(0,0,0,0.5) 100%),
+        /* Oscurecimiento progresivo hacia abajo */
+        linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.4) 80%, rgba(0,0,0,0.65) 95%);
+    pointer-events: none;
+}
+
+/* Responsive: altura se ajusta, overlay es porcentual y se adapta solo */
+@media (max-width: 1025px) {
+    .video-banner.jkb-video-hero {
+        height: calc(100svh - 5.4rem);
+        min-height: 420px;
+    }
 }
 
 @media (max-width: 768px) {
     .video-banner.jkb-video-hero {
-        height: min(620px, calc(100svh - 5.4rem));
-        min-height: 390px;
+        height: calc(100svh - 5rem);
+        min-height: 360px;
     }
-
     .video-banner.jkb-video-hero video {
-        object-position: center center;
-    }
-
-    .video-banner.jkb-video-hero::before {
-        background: linear-gradient(180deg, rgba(0,0,0,0.22) 0%, transparent 40%, rgba(0,0,0,0.15) 100%);
+        object-position: center 45%;
     }
 }
 
 @media (max-width: 480px) {
     .video-banner.jkb-video-hero {
-        height: min(560px, calc(100svh - 5rem));
-        min-height: 340px;
+        height: calc(100svh - 5rem);
+        min-height: 300px;
+    }
+}
+
+/* ── MÓVIL: cambia al video optimizado para pantallas pequeñas ── */
+
+/* ── MÓVIL: cambia al video optimizado para pantallas pequeñas ── */
+/* ── MÓVIL: el video pierde impacto visual, se reemplaza con contexto de marca ── */
+@media (max-width: 767px) {
+    .video-banner.jkb-video-hero video {
+        display: none !important;
+    }
+
+    .video-banner.jkb-video-hero {
+        background:
+            radial-gradient(ellipse 85% 70% at 50% 45%, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.45) 60%, #000 100%),
+            linear-gradient(180deg, rgba(0,0,0,0.5) 0%, transparent 25%, transparent 70%, rgba(0,0,0,0.6) 100%),
+            var(--jkb-hero-mobile-bg, linear-gradient(145deg, #0a1628 0%, #1a2a4f 40%, #10223f 100%));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video-banner.jkb-video-hero::before,
+    .video-banner.jkb-video-hero::after {
+        display: none;
+    }
+
+    /* Mensaje de marca central */
+    .jkb-hero-context {
+        position: relative;
+        z-index: 3;
+        text-align: center;
+        padding: 24px;
+        max-width: 360px;
+    }
+
+    .jkb-hero-context .jkb-hero-logo-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 24px;
+        padding: 12px;
+    }
+
+    .jkb-hero-context .jkb-hero-logo {
+        display: block;
+        width: min(280px, 80%);
+        height: auto;
+        filter:
+            drop-shadow(0 0 2px rgba(255,255,255,1))
+            drop-shadow(0 0 5px rgba(255,255,255,1))
+            drop-shadow(0 0 10px rgba(255,255,255,0.85))
+            drop-shadow(0 0 18px rgba(255,255,255,0.55))
+            drop-shadow(0 0 30px rgba(255,255,255,0.3));
+        animation: jkb-hero-glow-intense 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes jkb-hero-glow-intense {
+        0% {
+            filter:
+                drop-shadow(0 0 1px rgba(255,255,255,0.95))
+                drop-shadow(0 0 3px rgba(255,255,255,0.9))
+                drop-shadow(0 0 7px rgba(255,255,255,0.7))
+                drop-shadow(0 0 14px rgba(255,255,255,0.4))
+                drop-shadow(0 0 24px rgba(255,255,255,0.2));
+        }
+        100% {
+            filter:
+                drop-shadow(0 0 3px rgba(255,255,255,1))
+                drop-shadow(0 0 7px rgba(255,255,255,1))
+                drop-shadow(0 0 14px rgba(255,255,255,0.9))
+                drop-shadow(0 0 24px rgba(255,255,255,0.6))
+                drop-shadow(0 0 40px rgba(255,255,255,0.35));
+        }
+    }
+
+    .jkb-hero-context h2 {
+        margin: 0 0 6px;
+        font: 700 clamp(1.2rem, 4.5vw, 1.6rem)/1.2 "Poppins", sans-serif;
+        color: #fff;
+        letter-spacing: -0.3px;
+        text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    }
+
+    .jkb-hero-context p {
+        margin: 0 0 18px;
+        font: 500 clamp(0.82rem, 2.8vw, 0.94rem)/1.5 "Open Sans", sans-serif;
+        color: rgba(255,255,255,0.8);
+        text-shadow: 0 1px 10px rgba(0,0,0,0.4);
+    }
+
+    .jkb-hero-context .jkb-hero-cta {
+        display: inline-block;
+        padding: 10px 24px;
+        border-radius: 999px;
+        background: #c00000;
+        color: #fff;
+        font: 700 0.88rem/1 "Poppins", sans-serif;
+        text-decoration: none;
+        transition: background 0.2s;
+    }
+
+    .jkb-hero-context .jkb-hero-cta:hover {
+        background: #a00000;
+    }
+}
+
+@media (max-width: 480px) and (orientation: landscape) {
+    .jkb-hero-context .jkb-hero-logo {
+        width: min(120px, 40%);
+        margin-bottom: 8px;
+    }
+    .jkb-hero-context h2 {
+        font-size: clamp(1rem, 3vw, 1.2rem);
+    }
+    .jkb-hero-context p {
+        display: none;
+    }
+}
+
+/* ====================================================== */
+/* JKB PAYMENTS PREMIUM                                   */
+/* ====================================================== */
+.jkb-payments-premium {
+    position: relative;
+    min-height: 100svh;
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    padding: clamp(18px, 2.2vw, 24px) clamp(14px, 2vw, 24px);
+    background:
+        radial-gradient(1200px 520px at 15% -10%, rgba(26, 57, 116, 0.12), transparent 58%),
+        radial-gradient(900px 460px at 90% 110%, rgba(36, 112, 224, 0.08), transparent 62%),
+        linear-gradient(180deg, #f6f8fc 0%, #edf2f9 100%);
+    overflow: hidden;
+}
+
+.jkb-payments-premium__container {
+    width: min(1240px, 100%);
+    margin: 0 auto;
+    display: grid;
+    gap: clamp(10px, 1.3vw, 14px);
+}
+
+.jkb-payments-premium__header {
+    display: grid;
+    gap: 8px;
+    max-width: 840px;
+}
+
+.jkb-payments-premium__title {
+    margin: 0;
+    color: #0f2247;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(1.35rem, 2.4vw, 2rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+}
+
+.jkb-payments-premium__subtitle {
+    margin: 0;
+    color: rgba(18, 31, 54, 0.76);
+    font-family: "Inter", sans-serif;
+    font-size: clamp(0.82rem, 1vw, 0.9rem);
+    line-height: 1.45;
+}
+
+.jkb-payments-premium__line {
+    width: min(210px, 46vw);
+    height: 2px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #1f4a93 0%, #2b7cf8 70%, rgba(43, 124, 248, 0.18) 100%);
+}
+
+.jkb-payments-premium__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(10px, 1.1vw, 14px);
+}
+
+.jkb-payments-premium__card {
+    position: relative;
+    border-radius: 14px;
+    border: 1px solid rgba(27, 58, 108, 0.14);
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.92), rgba(241, 246, 255, 0.84));
+    box-shadow: 0 16px 42px rgba(16, 33, 63, 0.09);
+    backdrop-filter: blur(4px);
+    padding: clamp(10px, 1vw, 14px);
+    display: grid;
+    gap: 8px;
+}
+
+.jkb-payments-premium__eyebrow {
+    display: inline-flex;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(38, 82, 164, 0.28);
+    background: rgba(38, 82, 164, 0.08);
+    color: #1d4588;
+    font-family: "Inter", sans-serif;
+    font-size: 0.64rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.jkb-payments-premium__card-title {
+    margin: 0;
+    color: #0f2247;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(0.98rem, 1.2vw, 1.12rem);
+    line-height: 1.18;
+    font-weight: 700;
+}
+
+.jkb-payments-premium__card-copy {
+    margin: 0;
+    color: rgba(21, 36, 63, 0.78);
+    font-family: "Inter", sans-serif;
+    font-size: 0.81rem;
+    line-height: 1.42;
+}
+
+.jkb-payments-premium__mini-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px;
+}
+
+.jkb-payments-premium__mini-card {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(37, 77, 148, 0.2);
+    background: rgba(255, 255, 255, 0.72);
+    color: #173c7a;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    transition: transform 0.26s ease, box-shadow 0.26s ease, border-color 0.26s ease;
+}
+
+.jkb-payments-premium__mini-card i { font-size: 1rem; }
+
+.jkb-payments-premium__mini-card:hover,
+.jkb-payments-premium__mini-card:focus-visible {
+    transform: translateY(-2px);
+    border-color: rgba(40, 97, 196, 0.45);
+    box-shadow: 0 12px 24px rgba(24, 59, 121, 0.14);
+    outline: none;
+}
+
+.jkb-payments-premium__cta {
+    margin-top: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #224e9a 0%, #2e73de 100%);
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    box-shadow: 0 12px 24px rgba(25, 72, 149, 0.28);
+    transition: transform 0.26s ease, box-shadow 0.26s ease, filter 0.26s ease;
+}
+
+.jkb-payments-premium__cta:hover,
+.jkb-payments-premium__cta:focus-visible {
+    transform: translateY(-2px);
+    filter: brightness(1.03);
+    box-shadow: 0 14px 30px rgba(21, 63, 131, 0.35);
+    outline: none;
+}
+
+.jkb-payments-premium__banks { display: grid; gap: 10px; }
+.jkb-payments-premium__banks { gap: 7px; }
+
+.jkb-payments-premium__bank {
+    display: grid;
+    gap: 6px;
+    padding: 9px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(31, 71, 135, 0.2);
+    background: rgba(255, 255, 255, 0.76);
+}
+
+.jkb-payments-premium__bank-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.jkb-payments-premium__bank-head img {
+    height: 22px;
+    width: auto;
+    max-width: 152px;
+    object-fit: contain;
+}
+
+.jkb-payments-premium__badge {
+    display: inline-flex;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: rgba(39, 133, 223, 0.12);
+    color: #1e65b9;
+    font-family: "Inter", sans-serif;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.jkb-payments-premium__bank-name,
+.jkb-payments-premium__bank-meta,
+.jkb-payments-premium__bank-number {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.jkb-payments-premium__bank-name { color: #0f2b57; font-size: 0.84rem; font-weight: 700; }
+.jkb-payments-premium__bank-meta { color: rgba(18, 33, 61, 0.72); font-size: 0.73rem; }
+.jkb-payments-premium__bank-number { color: #142c55; font-size: 0.86rem; font-weight: 700; letter-spacing: 0.02em; }
+
+.jkb-payments-premium__online-card {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: clamp(8px, 1vw, 10px);
+    padding: clamp(10px, 1vw, 14px);
+    border-radius: 14px;
+    border: 1px solid rgba(32, 66, 126, 0.16);
+    background: linear-gradient(160deg, rgba(16, 44, 95, 0.95), rgba(14, 37, 79, 0.9));
+    box-shadow: 0 18px 46px rgba(13, 31, 63, 0.24);
+    color: #e7f1ff;
+}
+
+.jkb-payments-premium__online-content { display: grid; gap: 10px; align-content: start; }
+.jkb-payments-premium__online-content { gap: 7px; }
+
+.jkb-payments-premium__online-content h3 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(1rem, 1.35vw, 1.2rem);
+    line-height: 1.1;
+    color: #f3f8ff;
+}
+
+.jkb-payments-premium__online-content p {
+    margin: 0;
+    color: rgba(220, 232, 249, 0.84);
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+.jkb-payments-premium__datafono {
+    display: grid;
+    gap: 6px;
+}
+
+.jkb-payments-premium__datafono p {
+    margin: 0;
+    color: #e7f1ff;
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.jkb-payments-premium__datafono-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jkb-payments-premium__datafono-logo img {
+    width: min(130px, 64%);
+    height: auto;
+    object-fit: contain;
+}
+
+.jkb-payments-premium__methods { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.jkb-payments-premium__methods span {
+    display: inline-flex;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(139, 184, 255, 0.42);
+    background: rgba(28, 75, 150, 0.36);
+    color: #edf4ff;
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.jkb-payments-premium__pay-btn {
+    margin-top: 2px;
+    width: fit-content;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #2f78e7 0%, #4aa0ff 100%);
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    box-shadow: 0 12px 24px rgba(28, 99, 201, 0.3);
+    transition: transform 0.26s ease, box-shadow 0.26s ease;
+}
+
+.jkb-payments-premium__pay-btn:hover,
+.jkb-payments-premium__pay-btn:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(36, 112, 224, 0.38);
+    outline: none;
+}
+
+.jkb-payments-premium__qr-card {
+    align-self: stretch;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: 7px;
+    border-radius: 12px;
+    padding: 10px 10px;
+    border: 1px solid rgba(152, 194, 255, 0.26);
+    background: linear-gradient(170deg, rgba(248, 252, 255, 0.96), rgba(222, 235, 254, 0.88));
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+}
+
+.jkb-payments-premium__qr-card p {
+    margin: 0;
+    color: #173869;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.jkb-payments-premium__qr-card img {
+    width: min(132px, 82%);
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid rgba(31, 86, 173, 0.24);
+    box-shadow: 0 10px 22px rgba(30, 79, 152, 0.2);
+}
+
+.jkb-payments-premium .banner_pagos_btn {
+    margin-top: 2px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    background: #12366a;
+    color: #f4f8ff;
+    font-family: "Inter", sans-serif;
+    font-size: 0.76rem;
+    font-weight: 600;
+}
+
+.jkb-payments-premium .banner_pagos_btn:hover,
+.jkb-payments-premium .banner_pagos_btn:focus-visible {
+    background: #1f4f95;
+    color: #ffffff;
+}
+
+@media (min-width: 769px) {
+    .jkb-payments-premium {
+        min-height: 100svh;
+        height: 100svh;
+        padding: 10px 12px;
+    }
+
+    .jkb-payments-premium__container {
+        height: 100%;
+        grid-template-columns: 1.16fr 0.84fr;
+        grid-template-rows: auto 1fr;
+        column-gap: 10px;
+        row-gap: 8px;
+        align-content: center;
+    }
+
+    .jkb-payments-premium__header {
+        grid-column: 1 / -1;
+        gap: 5px;
+    }
+
+    .jkb-payments-premium__title {
+        font-size: clamp(1.12rem, 1.35vw, 1.34rem);
+        line-height: 1.02;
+    }
+
+    .jkb-payments-premium__subtitle {
+        font-size: clamp(0.72rem, 0.78vw, 0.82rem);
+        line-height: 1.28;
+    }
+
+    .jkb-payments-premium__line {
+        width: min(180px, 30vw);
+    }
+
+    .jkb-payments-premium__grid {
+        grid-column: 1;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+        align-content: start;
+    }
+
+    .jkb-payments-premium__online {
+        grid-column: 2;
+    }
+
+    .jkb-payments-premium__card {
+        padding: 8px 9px;
+        gap: 6px;
+    }
+
+    .jkb-payments-premium__eyebrow {
+        padding: 4px 8px;
+        font-size: 0.58rem;
+    }
+
+    .jkb-payments-premium__card-title {
+        font-size: clamp(0.84rem, 0.92vw, 0.96rem);
+        line-height: 1.1;
+    }
+
+    .jkb-payments-premium__card-copy {
+        font-size: 0.72rem;
+        line-height: 1.24;
+    }
+
+    .jkb-payments-premium__mini-grid {
+        gap: 6px;
+    }
+
+    .jkb-payments-premium__mini-card {
+        padding: 6px 7px;
+        font-size: 0.66rem;
+        gap: 6px;
+    }
+
+    .jkb-payments-premium__mini-card i {
+        font-size: 0.82rem;
+    }
+
+    .jkb-payments-premium__cta {
+        padding: 7px 9px;
+        font-size: 0.68rem;
+    }
+
+    .jkb-payments-premium__banks {
+        gap: 6px;
+    }
+
+    .jkb-payments-premium__bank {
+        padding: 7px 8px;
+        gap: 4px;
+    }
+
+    .jkb-payments-premium__bank-head img {
+        height: 18px;
+    }
+
+    .jkb-payments-premium__badge {
+        font-size: 0.55rem;
+        padding: 3px 6px;
+    }
+
+    .jkb-payments-premium__bank-name {
+        font-size: 0.72rem;
+    }
+
+    .jkb-payments-premium__bank-meta {
+        font-size: 0.63rem;
+    }
+
+    .jkb-payments-premium__bank-number {
+        font-size: 0.73rem;
+    }
+
+    .jkb-payments-premium__online-card {
+        height: 100%;
+        grid-template-columns: 1fr;
+        align-content: start;
+        gap: 7px;
+        padding: 9px 9px;
+    }
+
+    .jkb-payments-premium__online-content {
+        gap: 6px;
+    }
+
+    .jkb-payments-premium__online-content h3 {
+        font-size: clamp(0.88rem, 1.02vw, 1rem);
+        line-height: 1.04;
+    }
+
+    .jkb-payments-premium__online-content p {
+        font-size: 0.71rem;
+        line-height: 1.22;
+    }
+
+    .jkb-payments-premium__datafono p {
+        font-size: 0.7rem;
+    }
+
+    .jkb-payments-premium__datafono-logo img {
+        width: min(92px, 56%);
+    }
+
+    .jkb-payments-premium__methods {
+        gap: 6px;
+    }
+
+    .jkb-payments-premium__methods span {
+        font-size: 0.62rem;
+        padding: 5px 7px;
+    }
+
+    .jkb-payments-premium__pay-btn {
+        padding: 7px 9px;
+        font-size: 0.68rem;
+    }
+
+    .jkb-payments-premium__qr-card {
+        gap: 6px;
+        padding: 8px 8px;
+    }
+
+    .jkb-payments-premium__qr-card p {
+        font-size: 0.67rem;
+        line-height: 1.2;
+    }
+
+    .jkb-payments-premium__qr-card img {
+        width: min(92px, 62%);
+    }
+
+    .jkb-payments-premium .banner_pagos_btn {
+        padding: 6px 8px;
+        font-size: 0.66rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .jkb-payments-premium {
+        min-height: 100svh;
+        height: 100svh;
+        padding: 14px 12px;
+    }
+    .jkb-payments-premium__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .jkb-payments-premium__online-card { grid-template-columns: 1.2fr 0.8fr; }
+}
+
+@media (max-width: 768px) {
+    .jkb-payments-premium {
+        min-height: auto;
+        height: auto;
+        padding: 34px 14px;
+    }
+    .jkb-payments-premium__grid { grid-template-columns: 1fr; }
+    .jkb-payments-premium__online-card { grid-template-columns: 1fr; }
+    .jkb-payments-premium__mini-grid { grid-template-columns: 1fr; }
+    .jkb-payments-premium__card { border-radius: 16px; padding: 14px; }
+    .jkb-payments-premium__title { font-size: 1.68rem; }
+    .jkb-payments-premium__subtitle { font-size: 0.92rem; }
+}
+
+/* ====================================================== */
+/* JKB PAYMENTS PREMIUM V2 (visual override)              */
+/* ====================================================== */
+.jkb-payments-premium {
+    --jkbp-bg: #f4f7fc;
+    --jkbp-card: #ffffff;
+    --jkbp-ink: #0f2347;
+    --jkbp-muted: #4f6283;
+    --jkbp-line: #d6e1f1;
+    --jkbp-blue: #1f4d95;
+    --jkbp-blue-2: #2f77e6;
+    background:
+        radial-gradient(1000px 420px at 0% -20%, rgba(47, 119, 230, 0.12), transparent 60%),
+        radial-gradient(800px 380px at 100% 120%, rgba(31, 77, 149, 0.1), transparent 62%),
+        linear-gradient(180deg, #f7f9fd 0%, var(--jkbp-bg) 100%);
+}
+
+.jkb-payments-premium__container {
+    width: min(1260px, 100%);
+}
+
+.jkb-payments-premium__header {
+    background: linear-gradient(150deg, rgba(255, 255, 255, 0.88), rgba(244, 248, 255, 0.84));
+    border: 1px solid var(--jkbp-line);
+    border-radius: 18px;
+    padding: clamp(8px, 1vw, 12px) clamp(10px, 1.2vw, 14px);
+    box-shadow: 0 14px 34px rgba(15, 35, 71, 0.08);
+    max-width: none;
+}
+
+.jkb-payments-premium__title {
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(0.98rem, 1.15vw, 1.22rem);
+    line-height: 1.07;
+    color: var(--jkbp-ink);
+    letter-spacing: -0.018em;
+}
+
+.jkb-payments-premium__subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: clamp(0.66rem, 0.72vw, 0.76rem);
+    line-height: 1.24;
+    color: var(--jkbp-muted);
+    max-width: 1020px;
+}
+
+.jkb-payments-premium__line {
+    width: min(150px, 24vw);
+    height: 2px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--jkbp-blue) 0%, var(--jkbp-blue-2) 82%, rgba(47, 119, 230, 0.16) 100%);
+}
+
+.jkb-payments-premium__grid {
+    gap: 10px;
+}
+
+.jkb-payments-premium__card,
+.jkb-payments-premium__online-card {
+    border-radius: 16px;
+    border: 1px solid var(--jkbp-line);
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.96), rgba(245, 249, 255, 0.9));
+    box-shadow: 0 14px 30px rgba(15, 35, 71, 0.08);
+}
+
+.jkb-payments-premium__card {
+    padding: clamp(10px, 1.1vw, 14px);
+    gap: 8px;
+}
+
+.jkb-payments-premium__eyebrow {
+    font-family: "Inter", sans-serif;
+    font-size: 0.62rem;
+    padding: 4px 9px;
+    border: 1px solid rgba(31, 77, 149, 0.26);
+    color: var(--jkbp-blue);
+    background: rgba(31, 77, 149, 0.08);
+}
+
+.jkb-payments-premium__card-title {
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(0.9rem, 1.02vw, 1.04rem);
+    line-height: 1.16;
+    color: var(--jkbp-ink);
+}
+
+.jkb-payments-premium__card-copy {
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.32;
+    color: var(--jkbp-muted);
+}
+
+.jkb-payments-premium__mini-grid {
+    gap: 7px;
+}
+
+.jkb-payments-premium__mini-card {
+    border: 1px solid #d7e3f5;
+    border-radius: 11px;
+    background: #ffffff;
+    color: #1a3f7f;
+    font-family: "Inter", sans-serif;
+    font-size: 0.68rem;
+    font-weight: 600;
+    padding: 7px 8px;
+    gap: 6px;
+}
+
+.jkb-payments-premium__mini-card i {
+    font-size: 0.86rem;
+}
+
+.jkb-payments-premium__mini-card:hover,
+.jkb-payments-premium__mini-card:focus-visible {
+    transform: translateY(-2px);
+    border-color: #9db8e6;
+    box-shadow: 0 10px 22px rgba(24, 61, 126, 0.14);
+}
+
+.jkb-payments-premium__cta {
+    background: linear-gradient(135deg, #1f4d95 0%, #2f77e6 100%);
+    border-radius: 11px;
+    padding: 7px 10px;
+    font-family: "Inter", sans-serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.01em;
+}
+
+.jkb-payments-premium__banks {
+    gap: 7px;
+}
+
+.jkb-payments-premium__bank {
+    border: 1px solid #d5e2f4;
+    border-radius: 11px;
+    background: #ffffff;
+    padding: 8px 9px;
+    gap: 4px;
+}
+
+.jkb-payments-premium__bank-head img {
+    height: 24px;
+    max-width: 168px;
+}
+
+.jkb-payments-premium__badge {
+    font-size: 0.54rem;
+    padding: 3px 6px;
+}
+
+.jkb-payments-premium__bank-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.74rem;
+    color: #14366e;
+}
+
+.jkb-payments-premium__bank-meta {
+    font-family: "Inter", sans-serif;
+    font-size: 0.64rem;
+    color: #5b6f91;
+}
+
+.jkb-payments-premium__bank-number {
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    color: #0d2b59;
+    letter-spacing: 0.02em;
+}
+
+.jkb-payments-premium__online-card {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 8px;
+    background: linear-gradient(165deg, rgba(16, 43, 89, 0.96), rgba(18, 50, 102, 0.95));
+    border-color: rgba(156, 191, 246, 0.28);
+    box-shadow: 0 18px 36px rgba(12, 31, 64, 0.3);
+}
+
+.jkb-payments-premium__online-content {
+    gap: 4px;
+}
+
+.jkb-payments-premium__online-content h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(0.8rem, 0.92vw, 0.92rem);
+    line-height: 1.08;
+}
+
+.jkb-payments-premium__online-content p {
+    font-family: "Inter", sans-serif;
+    font-size: 0.65rem;
+    line-height: 1.2;
+}
+
+.jkb-payments-premium__datafono {
+    display: grid;
+    gap: 4px;
+}
+
+.jkb-payments-premium__datafono p {
+    font-family: "Inter", sans-serif;
+    font-size: 0.64rem;
+    color: #dbe8ff;
+}
+
+.jkb-payments-premium__datafono-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 54px;
+    border-radius: 11px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(179, 205, 247, 0.26);
+}
+
+.jkb-payments-premium__datafono-logo img {
+    width: min(96px, 52%);
+    height: auto;
+    object-fit: contain;
+}
+
+.jkb-payments-premium__methods span {
+    font-family: "Inter", sans-serif;
+    font-size: 0.56rem;
+    padding: 4px 6px;
+}
+
+.jkb-payments-premium__pay-btn {
+    border-radius: 10px;
+    padding: 6px 9px;
+    font-family: "Inter", sans-serif;
+    font-size: 0.62rem;
+}
+
+.jkb-payments-premium__qr-card {
+    border-radius: 11px;
+    border: 1px solid rgba(166, 201, 248, 0.26);
+    background: linear-gradient(175deg, rgba(245, 250, 255, 0.97), rgba(230, 241, 255, 0.93));
+    padding: 7px;
+    gap: 5px;
+}
+
+.jkb-payments-premium__qr-card p {
+    font-family: "Inter", sans-serif;
+    font-size: 0.62rem;
+    line-height: 1.18;
+    color: #153968;
+}
+
+.jkb-payments-premium__qr-card img {
+    width: min(86px, 50%);
+    border-radius: 10px;
+}
+
+.jkb-payments-premium .banner_pagos_btn {
+    padding: 5px 8px;
+    border-radius: 9px;
+    font-family: "Inter", sans-serif;
+    font-size: 0.6rem;
+    background: #13386f;
+}
+
+@media (min-width: 769px) {
+    .jkb-payments-premium {
+        min-height: 100svh;
+        height: 100svh;
+        padding: 10px 12px;
+    }
+
+    .jkb-payments-premium__container {
+        height: 100%;
+        grid-template-columns: 1.18fr 0.82fr;
+        grid-template-rows: auto 1fr;
+        column-gap: 10px;
+        row-gap: 8px;
+        align-content: center;
+    }
+
+    .jkb-payments-premium__header {
+        grid-column: 1 / -1;
+    }
+
+    .jkb-payments-premium__grid {
+        grid-column: 1;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .jkb-payments-premium__online {
+        grid-column: 2;
+    }
+}
+
+@media (max-width: 1024px) {
+    .jkb-payments-premium {
+        min-height: 100svh;
+        height: 100svh;
+        padding: 10px 10px;
+    }
+
+    .jkb-payments-premium__container {
+        grid-template-columns: 1.1fr 0.9fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .jkb-payments-premium {
+        min-height: auto;
+        height: auto;
+        padding: 30px 14px;
+    }
+
+    .jkb-payments-premium__container {
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 12px;
+    }
+
+    .jkb-payments-premium__header,
+    .jkb-payments-premium__grid,
+    .jkb-payments-premium__online {
+        grid-column: auto;
+    }
+
+    .jkb-payments-premium__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .jkb-payments-premium__title {
+        font-size: 1.42rem;
+    }
+
+    .jkb-payments-premium__subtitle {
+        font-size: 0.9rem;
+        line-height: 1.45;
+    }
+
+    .jkb-payments-premium__card,
+    .jkb-payments-premium__online-card {
+        padding: 12px;
+    }
+
+    .jkb-payments-premium__mini-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .jkb-payments-premium__mini-card,
+    .jkb-payments-premium__cta,
+    .jkb-payments-premium__pay-btn,
+    .jkb-payments-premium .banner_pagos_btn {
+        font-size: 0.86rem;
+    }
+
+    .jkb-payments-premium__qr-card img,
+    .jkb-payments-premium__datafono-logo img {
+        width: min(160px, 80%);
+    }
+}
+
+/* ====================================================== */
+/* JKB PAYMENTS V3                                        */
+/* ====================================================== */
+.jkb-payments-premium {
+    min-height: 100svh;
+    height: 100svh;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(980px 420px at 6% -20%, rgba(36, 101, 203, 0.12), transparent 56%),
+        radial-gradient(860px 360px at 100% 120%, rgba(20, 63, 134, 0.1), transparent 58%),
+        linear-gradient(180deg, #f8fafe 0%, #eff4fb 100%);
+}
+
+.jkb-payments-v3 {
+    width: min(1280px, 100%);
+    margin: 0 auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.9fr 1fr 1fr 0.9fr;
+    gap: 10px;
+    align-items: stretch;
+}
+
+.jkb-payments-v3__intro,
+.jkb-payments-v3__panel {
+    border-radius: 16px;
+    border: 1px solid #d7e3f3;
+    background: linear-gradient(160deg, rgba(255,255,255,0.96), rgba(244,248,255,0.9));
+    box-shadow: 0 14px 28px rgba(13, 34, 70, 0.08);
+    padding: 10px;
+    display: grid;
+    gap: 8px;
+    align-content: start;
+    overflow: hidden;
+}
+
+.jkb-payments-v3__intro h2 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(1rem, 1.1vw, 1.2rem);
+    line-height: 1.06;
+    color: #10264a;
+}
+
+.jkb-payments-v3__intro p {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 0.68rem;
+    line-height: 1.25;
+    color: #4f6282;
+}
+
+.jkb-payments-v3__chips {
+    display: grid;
+    gap: 6px;
+}
+
+.jkb-payments-v3__chips span {
+    display: inline-flex;
+    width: fit-content;
+    padding: 4px 8px;
+    border-radius: 999px;
+    border: 1px solid rgba(33, 83, 163, 0.25);
+    background: rgba(33, 83, 163, 0.08);
+    color: #1f4a90;
+    font-family: "Inter", sans-serif;
+    font-size: 0.58rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+}
+
+.jkb-payments-v3__panel h3 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.94rem;
+    line-height: 1.12;
+    color: #12305f;
+}
+
+.jkb-payments-v3__panel p {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 0.68rem;
+    line-height: 1.24;
+    color: #4f6384;
+}
+
+.jkb-payments-v3__contact {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+}
+
+.jkb-payments-v3__contact a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #1a427f;
+    font-family: "Inter", sans-serif;
+    font-size: 0.64rem;
+    font-weight: 600;
+    border: 1px solid #d3dff1;
+    border-radius: 10px;
+    padding: 6px 7px;
+    background: #ffffff;
+}
+
+.jkb-payments-v3__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 0.64rem;
+    font-weight: 700;
+    padding: 7px 10px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #1f4e98 0%, #2f78e7 100%);
+}
+
+.jkb-payments-v3__bank {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+    align-items: center;
+    border: 1px solid #d6e2f2;
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 7px;
+}
+
+.jkb-payments-v3__bank img {
+    width: 74px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.jkb-payments-v3__bank strong,
+.jkb-payments-v3__bank span,
+.jkb-payments-v3__bank b {
+    display: block;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.jkb-payments-v3__bank strong { font-size: 0.67rem; color: #12315f; }
+.jkb-payments-v3__bank span { font-size: 0.6rem; color: #5e7394; }
+.jkb-payments-v3__bank b { font-size: 0.66rem; color: #0f2d59; letter-spacing: 0.02em; }
+
+.jkb-payments-v3__logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+}
+
+.jkb-payments-v3__logos figure {
+    margin: 0;
+    border: 1px solid #d7e3f4;
+    border-radius: 10px;
+    background: #fff;
+    padding: 7px;
+    display: grid;
+    gap: 5px;
+    justify-items: center;
+}
+
+.jkb-payments-v3__logos figcaption {
+    font-family: "Inter", sans-serif;
+    font-size: 0.58rem;
+    color: #3f5780;
+}
+
+.jkb-payments-v3__logos img {
+    width: min(100px, 88%);
+    height: auto;
+    object-fit: contain;
+}
+
+.jkb-payments-v3__actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+}
+
+.jkb-payments-v3__pay,
+.jkb-payments-v3 .banner_pagos_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 6px 8px;
+    border-radius: 9px;
+    font-family: "Inter", sans-serif;
+    font-size: 0.61rem;
+    font-weight: 700;
+}
+
+.jkb-payments-v3__pay {
+    color: #fff;
+    background: linear-gradient(135deg, #2358ab 0%, #2f78e7 100%);
+}
+
+.jkb-payments-v3 .banner_pagos_btn {
+    color: #f2f7ff;
+    background: #12376c;
+}
+
+@media (max-width: 1024px) {
+    .jkb-payments-premium {
+        min-height: 100svh;
+        height: 100svh;
+        padding: 8px;
+    }
+
+    .jkb-payments-v3 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 8px;
+    }
+
+    .jkb-payments-v3__intro {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .jkb-payments-premium {
+        min-height: auto;
+        height: auto;
+        padding: 28px 12px;
+    }
+
+    .jkb-payments-v3 {
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .jkb-payments-v3__contact,
+    .jkb-payments-v3__logos,
+    .jkb-payments-v3__actions {
+        grid-template-columns: 1fr;
+    }
+
+    .jkb-payments-v3__intro h2 { font-size: 1.28rem; }
+    .jkb-payments-v3__intro p,
+    .jkb-payments-v3__panel p { font-size: 0.9rem; line-height: 1.45; }
+    .jkb-payments-v3__panel h3 { font-size: 1.06rem; }
+    .jkb-payments-v3__bank img { width: 108px; height: 36px; }
+    .jkb-payments-v3__bank strong { font-size: 0.92rem; }
+    .jkb-payments-v3__bank span,
+    .jkb-payments-v3__bank b { font-size: 0.86rem; }
+    .jkb-payments-v3__contact a,
+    .jkb-payments-v3__cta,
+    .jkb-payments-v3__pay,
+    .jkb-payments-v3 .banner_pagos_btn { font-size: 0.92rem; }
+}
+
+/* ====================================================== */
+/* JKB PAYMENTS OEM - EDITORIAL FULL VIEWPORT            */
+/* ====================================================== */
+#banner_pagos.jkb-payments-oem {
+    position: relative;
+    width: 100%;
+    min-height: 100svh;
+    height: 100svh;
+    padding: clamp(10px, 1.7vh, 18px) 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: transparent;
+    isolation: isolate;
+}
+
+#banner_pagos.jkb-payments-oem::before,
+#banner_pagos.jkb-payments-oem::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+#banner_pagos.jkb-payments-oem::before {
+    z-index: 0;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(247, 251, 255, 0.5) 32%,
+            rgba(240, 247, 255, 0.68) 70%,
+            rgba(255, 255, 255, 0.96) 100%
+        );
+}
+
+#banner_pagos.jkb-payments-oem::after {
+    z-index: 0;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 58%,
+            rgba(255, 255, 255, 0.72) 84%,
+            rgba(255, 255, 255, 1) 100%
+        ),
+        radial-gradient(900px 360px at 8% -15%, rgba(33, 85, 162, 0.11), transparent 62%),
+        radial-gradient(980px 420px at 100% 120%, rgba(28, 71, 142, 0.1), transparent 64%);
+}
+
+#banner_pagos.jkb-payments-oem,
+#banner_pagos.jkb-payments-oem * {
+    box-sizing: border-box;
+}
+
+.jkb-payments-oem__protagonist-wrap {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 0 0 clamp(1px, 0.24vh, 3px);
+    perspective: 1200px;
+}
+
+.jkb-payments-oem__protagonist {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    color: #1a2a4f;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(1.4rem, 2.6vw, 2.2rem);
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    line-height: 1.08;
+    text-transform: none;
+    text-decoration: none;
+    transform-origin: left bottom;
+    will-change: transform, opacity, filter;
+}
+
+.jkb-payments-oem__letter {
+    display: inline-block;
+    will-change: transform, opacity, filter;
+    transform-origin: 50% 100%;
+}
+
+.jkb-payments-oem__letter.is-space {
+    width: 0.32em;
+}
+
+.jkb-payments-oem__viewport {
+    position: relative;
+    z-index: 1;
+    width: min(1320px, 96vw);
+    height: auto;
+    margin: 0 auto;
+    padding: clamp(12px, 1.2vh, 18px) clamp(18px, 1.9vw, 30px) clamp(30px, 3.3vh, 46px);
+    border-radius: 24px;
+    border: 1px solid rgba(206, 220, 239, 0.9);
+    background: linear-gradient(165deg, rgba(255, 255, 255, 0.84), rgba(245, 250, 255, 0.78));
+    box-shadow:
+        0 22px 46px rgba(13, 35, 74, 0.1),
+        0 1px 0 rgba(255, 255, 255, 0.62) inset;
+    backdrop-filter: blur(2px);
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: clamp(10px, 1.1vh, 14px);
+    overflow: hidden;
+}
+
+.jkb-payments-oem__head {
+    min-width: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) auto;
+    gap: clamp(12px, 1vw, 18px);
+    align-items: end;
+    padding-bottom: clamp(8px, 0.9vh, 12px);
+    border-bottom: 1px solid #d6e2f1;
+}
+
+.jkb-payments-oem__head-copy {
+    min-width: 0;
+    display: grid;
+    gap: 7px;
+}
+
+.jkb-payments-oem__head h2 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #102a52;
+    font-size: clamp(1.15rem, 1.45vw, 1.68rem);
+    letter-spacing: 0.01em;
+    line-height: 1.14;
+}
+
+.jkb-payments-oem__head p {
+    margin: 0;
+    color: #425b81;
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(0.76rem, 0.86vw, 0.94rem);
+    line-height: 1.43;
+}
+
+.jkb-payments-oem__head p strong {
+    color: #1f467f;
+    font-weight: 700;
+}
+
+.jkb-payments-oem__tags {
+    min-width: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 7px;
+}
+
+.jkb-payments-oem__tags span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 28px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(34, 80, 150, 0.26);
+    background: rgba(34, 80, 150, 0.09);
+    color: #20498d;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.66rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.jkb-payments-oem__grid {
+    min-width: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr) minmax(0, 0.94fr);
+    gap: clamp(10px, 1vw, 14px);
+    align-items: start;
+}
+
+.jkb-payments-oem__panel {
+    min-width: 0;
+    padding: clamp(11px, 1.2vh, 16px) clamp(12px, 1.15vw, 16px);
+    border-radius: 16px;
+    border: 1px solid rgba(213, 225, 240, 0.86);
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.9), rgba(246, 251, 255, 0.84));
+    box-shadow: 0 10px 24px rgba(17, 42, 81, 0.075);
+    display: grid;
+    align-content: start;
+    gap: clamp(6px, 0.7vh, 9px);
+    overflow: hidden;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.jkb-payments-oem__panel:hover {
+    transform: translateY(-2px);
+    border-color: #c5d7ee;
+    box-shadow: 0 14px 28px rgba(17, 42, 81, 0.11);
+}
+
+.jkb-payments-oem__panel h3 {
+    margin: 0;
+    color: #11305d;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(0.95rem, 1.04vw, 1.14rem);
+    line-height: 1.15;
+}
+
+.jkb-payments-oem__panel p {
+    margin: 0;
+    color: #4b6388;
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(0.74rem, 0.82vw, 0.89rem);
+    line-height: 1.4;
+}
+
+.jkb-payments-oem__head h2,
+.jkb-payments-oem__head p,
+.jkb-payments-oem__panel h3,
+.jkb-payments-oem__panel p,
+.jkb-payments-oem__contact-list a,
+.jkb-payments-oem__bank strong,
+.jkb-payments-oem__bank span,
+.jkb-payments-oem__bank b,
+.jkb-payments-oem__assets figcaption {
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+.jkb-payments-oem__contact-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px;
+}
+
+.jkb-payments-oem__contact-list a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 34px;
+    padding: 6px 9px;
+    border-radius: 10px;
+    border: 1px solid #d2dff0;
+    background: #ffffff;
+    color: #1b457f;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.jkb-payments-oem__contact-list a:hover {
+    border-color: #bfd4ee;
+    background: #f7fbff;
+}
+
+.jkb-payments-oem__contact-list i {
+    color: #24549e;
+    font-size: 0.86rem;
+}
+
+.jkb-payments-oem__advisor {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 37px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    background: linear-gradient(135deg, #1e4e97 0%, #2f78e7 100%);
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.77rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    border: 1px solid transparent;
+    transition: background-color 0.22s ease, color 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.jkb-payments-oem__panel--banks {
+    background: linear-gradient(165deg, rgba(248, 252, 255, 0.98), rgba(242, 248, 255, 0.95));
+}
+
+.jkb-payments-oem__panel--online {
+    padding-bottom: clamp(14px, 1.8vh, 24px);
+}
+
+.jkb-payments-oem__bank {
+    display: grid;
+    grid-template-columns: minmax(96px, 124px) minmax(0, 1fr);
+    align-items: center;
+    gap: 9px;
+    padding: 7px;
+    border-radius: 11px;
+    border: 1px solid #d5e2f2;
+    background: #ffffff;
+}
+
+.jkb-payments-oem__bank img {
+    width: clamp(96px, 7.9vw, 126px);
+    height: clamp(30px, 2.4vw, 42px);
+    object-fit: contain;
+    object-position: left center;
+}
+
+.jkb-payments-oem__bank > div {
+    min-width: 0;
+    display: grid;
+    gap: 1px;
+}
+
+.jkb-payments-oem__bank strong,
+.jkb-payments-oem__bank span,
+.jkb-payments-oem__bank b {
+    display: block;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.22;
+}
+
+.jkb-payments-oem__bank strong {
+    color: #163766;
+    font-size: clamp(0.73rem, 0.75vw, 0.83rem);
+}
+
+.jkb-payments-oem__bank span {
+    color: #597192;
+    font-size: clamp(0.69rem, 0.71vw, 0.78rem);
+}
+
+.jkb-payments-oem__bank b {
+    color: #11305c;
+    font-size: clamp(0.71rem, 0.73vw, 0.81rem);
+    letter-spacing: 0.01em;
+}
+
+.jkb-payments-oem__assets {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    align-items: start;
+    gap: 8px;
+}
+
+.jkb-payments-oem__assets figure {
+    margin: 0;
+    min-height: 146px;
+    height: 146px;
+    width: 112px;
+    padding: 3px;
+    border-radius: 10px;
+    border: 1px solid #d6e2f1;
+    background: #ffffff;
+    display: grid;
+    align-content: start;
+    justify-items: center;
+    gap: 2px;
+    justify-self: center;
+}
+
+.jkb-payments-oem__assets figcaption {
+    margin: 0;
+    color: #456189;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.66rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    max-width: 136px;
+    min-height: 2.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.15;
+}
+
+.jkb-payments-oem__assets img {
+    width: 104px;
+    height: 104px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.jkb-payments-oem__assets figure:first-child img,
+.jkb-payments-oem__assets figure:last-child img {
+    width: 104px;
+    height: 104px;
+}
+
+.jkb-payments-oem__assets figure:last-child img {
+    width: 92px;
+    height: 92px;
+}
+
+.jkb-payments-oem__actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+}
+
+.jkb-payments-oem__pay,
+#banner_pagos.jkb-payments-oem .banner_pagos_btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 37px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: 0;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    border: 1px solid transparent;
+    transition: background-color 0.22s ease, color 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.jkb-payments-oem__pay {
+    color: #ffffff;
+    background: linear-gradient(135deg, #1f4f98 0%, #2f78e7 100%);
+    box-shadow: 0 10px 18px rgba(25, 63, 127, 0.2);
+}
+
+#banner_pagos.jkb-payments-oem .banner_pagos_btn {
+    color: #f4f8ff;
+    background: #173f77 !important;
+}
+
+.jkb-payments-oem__advisor:hover,
+.jkb-payments-oem__advisor:focus-visible,
+.jkb-payments-oem__pay:hover,
+.jkb-payments-oem__pay:focus-visible,
+#banner_pagos.jkb-payments-oem .banner_pagos_btn:hover,
+#banner_pagos.jkb-payments-oem .banner_pagos_btn:focus-visible {
+    background: #ffffff !important;
+    color: #1f4f98 !important;
+    border-color: #1f4f98;
+    box-shadow: 0 8px 16px rgba(31, 79, 152, 0.18);
+}
+
+@media (max-width: 1240px) {
+    .jkb-payments-oem__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: auto auto;
+    }
+
+    .jkb-payments-oem__panel--contact {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .jkb-payments-oem__panel--online {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+    .jkb-payments-oem__panel--banks {
+        grid-column: 2;
+        grid-row: 1;
+    }
+}
+
+@media (max-width: 1024px) {
+    #banner_pagos.jkb-payments-oem {
+        min-height: 100svh;
+        height: 100svh;
+        padding: clamp(8px, 1.4vh, 14px) 0;
+    }
+
+    .jkb-payments-oem__viewport {
+        width: min(1000px, 96vw);
+        height: auto;
+        border-radius: 20px;
+        padding: 12px 16px 26px;
+        gap: 10px;
+    }
+    .jkb-payments-oem__protagonist {
+        font-size: clamp(1.22rem, 2.35vw, 1.72rem);
+        letter-spacing: -0.25px;
+    }
+
+    .jkb-payments-oem__head {
+        grid-template-columns: 1fr;
+        gap: 9px;
+        padding-bottom: 8px;
+    }
+
+    .jkb-payments-oem__tags {
+        justify-content: flex-start;
+    }
+
+    .jkb-payments-oem__panel {
+        padding: 10px 12px;
+    }
+
+    .jkb-payments-oem__assets figure {
+        min-height: 58px;
+    }
+}
+
+@media (max-width: 768px) {
+    #banner_pagos.jkb-payments-oem {
+        min-height: auto;
+        height: auto;
+        padding: 28px 0 24px;
+    }
+
+    .jkb-payments-oem__protagonist-wrap {
+        width: 100%;
+        margin: 0 0 6px;
+        justify-content: flex-start;
+    }
+
+    .jkb-payments-oem__protagonist {
+        width: auto;
+        text-align: left;
+        letter-spacing: -0.2px;
+        font-size: clamp(1.08rem, 4.8vw, 1.42rem);
+        padding: 0;
+    }
+
+    .jkb-payments-oem__viewport {
+        width: min(700px, 95vw);
+        height: auto;
+        border-radius: 16px;
+        padding: 11px 14px 23px;
+        gap: 10px;
+    }
+
+    .jkb-payments-oem__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        gap: 10px;
+    }
+
+    .jkb-payments-oem__panel--contact,
+    .jkb-payments-oem__panel--online,
+    .jkb-payments-oem__panel--banks {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .jkb-payments-oem__head h2 {
+        font-size: 1.22rem;
+    }
+
+    .jkb-payments-oem__head p,
+    .jkb-payments-oem__panel p {
+        font-size: 0.9rem;
+        line-height: 1.48;
+    }
+
+    .jkb-payments-oem__panel h3 {
+        font-size: 1.03rem;
+    }
+
+    .jkb-payments-oem__actions {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    #banner_pagos.jkb-payments-oem {
+        padding: 22px 0 18px;
+    }
+
+    .jkb-payments-oem__protagonist-wrap {
+        width: 100%;
+        margin-bottom: 4px;
+    }
+
+    .jkb-payments-oem__protagonist {
+        letter-spacing: -0.12px;
+        font-size: clamp(0.98rem, 5.2vw, 1.18rem);
+        padding: 0;
+    }
+
+    .jkb-payments-oem__viewport {
+        width: calc(100% - 16px);
+        padding: 10px 12px 20px;
+        border-radius: 14px;
+    }
+
+    .jkb-payments-oem__head h2 {
+        font-size: 1.08rem;
+    }
+
+    .jkb-payments-oem__head p,
+    .jkb-payments-oem__panel p {
+        font-size: 0.84rem;
+    }
+
+    .jkb-payments-oem__tags span {
+        font-size: 0.61rem;
+    }
+
+    .jkb-payments-oem__contact-list {
+        grid-template-columns: 1fr;
+    }
+
+    .jkb-payments-oem__assets {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .jkb-payments-oem__assets figure {
+        min-height: 61px;
+    }
+
+    .jkb-payments-oem__contact-list a,
+    .jkb-payments-oem__advisor,
+    .jkb-payments-oem__pay,
+    #banner_pagos.jkb-payments-oem .banner_pagos_btn {
+        min-height: 40px;
+        font-size: 0.81rem;
+    }
+}
+
+/* ====================================================== */
+/* JKB PAYMENT STEPS - FONDO BLANCO CONTINUO              */
+/* ====================================================== */
+#payment_steps.compra-dos-final {
+    position: relative;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    background: #ffffff !important;
+}
+
+#payment_steps.compra-dos-final::before,
+#payment_steps.compra-dos-final::after {
+    content: none !important;
+}
+
+#payment_steps.compra-dos-final .compra-dos-final-container {
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    padding-bottom: clamp(22px, 3.4vw, 40px) !important;
+}
+
+@media (max-width: 768px) {
+    #payment_steps.compra-dos-final .compra-dos-final-container {
+        padding-bottom: clamp(25px, 3.91vw, 46px) !important;
+    }
+}
+
+#payment_steps.compra-dos-final .compra-dos-final-izquierda,
+#payment_steps.compra-dos-final .compra-dos-final-derecha,
+#payment_steps.compra-dos-final .compra-dos-final-video,
+#payment_steps.compra-dos-final .compra-dos-final-video video {
+    background: transparent !important;
+}
+
+/* ====================================================== */
+/* PAYMENT STEPS - VIEWPORT COMPLETO EN ESCRITORIO       */
+/* ====================================================== */
+@media (min-width: 1025px) {
+    #payment_steps.compra-dos-final {
+        min-height: 100svh !important;
+        height: 100svh !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+        display: flex;
+        align-items: center;
+    }
+
+    #payment_steps.compra-dos-final .compra-dos-final-container {
+        width: min(1320px, 96vw);
+        height: min(92svh, 92vh) !important;
+        max-height: min(92svh, 92vh) !important;
+        margin: 0 auto !important;
+        padding: 44px 24px 14px !important;
+        gap: 16px;
+        align-items: center;
+    }
+
+    #payment_steps.compra-dos-final .compra-dos-final-pasos {
+        gap: 5px;
+    }
+
+    #payment_steps.compra-dos-final .compra-dos-final-paso {
+        padding: 2px 0;
+    }
+
+    #payment_steps.compra-dos-final .compra-dos-final-paso p {
+        line-height: 1.32;
+    }
+
+    #payment_steps.compra-dos-final .compra-dos-final-paso p span {
+        line-height: 1.3;
+    }
+
+    #payment_steps.compra-dos-final .compra-dos-final-video video {
+        transform: scale(1) !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .jkb-payments-oem__panel,
+    .jkb-payments-oem__contact-list a {
+        transition: none;
+    }
+
+    #Durae.jkb-ally-oem::after,
+    .f-minimal-yellow,
+    .jkb-postsales-fusion {
+        animation: none !important;
+    }
+}
+
+/* ====================================================== */
+/* JKB ALLY OEM - PRINCIPAL ALIADO (MANDO)               */
+/* Minimal + editorial inspirado en Medios de pago       */
+/* ====================================================== */
+#Durae.jkb-ally-oem {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: clamp(8px, 1.2vw, 14px) 12px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    overflow: hidden;
+    isolation: isolate;
+    font-family: "Poppins", sans-serif;
+}
+
+#Durae.jkb-ally-oem::before,
+#Durae.jkb-ally-oem::after {
+    content: none;
+}
+
+#Durae.jkb-ally-oem .jkb-ally-oem__viewport {
+    position: relative;
+    z-index: 1;
+    width: min(1160px, 96vw);
+    margin: 0 auto;
+    padding: clamp(10px, 1.2vw, 14px) clamp(12px, 1.4vw, 18px);
+    border-radius: 18px;
+    border: 1px solid rgba(226, 203, 110, 0.58);
+    background: linear-gradient(165deg, rgba(255, 255, 255, 0.82), rgba(255, 247, 216, 0.76));
+    box-shadow:
+        0 10px 24px rgba(13, 35, 74, 0.08),
+        0 1px 0 rgba(255, 255, 255, 0.74) inset;
+    backdrop-filter: blur(1.5px);
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) auto minmax(0, 1fr);
+    gap: clamp(10px, 1.4vw, 20px);
+    align-items: center;
+}
+
+#Durae.jkb-ally-oem .jkb-ally-oem__head {
+    width: auto;
+    display: grid;
+    gap: 4px;
+    justify-items: start;
+    text-align: left;
+}
+
+#Durae.jkb-ally-oem .jkb-ally-oem__eyebrow {
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 26px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(34, 80, 150, 0.25);
+    background: rgba(34, 80, 150, 0.09);
+    color: #1f4b91;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+#Durae.jkb-ally-oem .jkb-ally-oem__head h2 {
+    margin: 0;
+    color: #112f5d;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(1.02rem, 1.6vw, 1.38rem);
+    font-weight: 700;
+    letter-spacing: -0.15px;
+    line-height: 1.14;
+}
+
+#Durae.jkb-ally-oem .jkb-ally-oem__brand {
+    width: auto;
+    margin: 0;
+    display: grid;
+    gap: 6px;
+    justify-items: center;
+}
+
+#Durae.jkb-ally-oem .jkb-ally-oem__logo-wrap {
+    width: min(290px, 100%);
+    border-radius: 12px;
+    border: 1px solid rgba(214, 228, 245, 0.9);
+    background: linear-gradient(165deg, rgba(255, 255, 255, 0.94), rgba(248, 251, 255, 0.9));
+    box-shadow: 0 8px 18px rgba(18, 44, 86, 0.07);
+    display: grid;
+    place-items: center;
+    padding: clamp(6px, 1vw, 10px);
+}
+
+#Durae.jkb-ally-oem .jkb-ally-oem__logo {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+#Durae.jkb-ally-oem .jkb-ally-oem__brand figcaption {
+    margin: 0;
+    color: #39567f;
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(0.76rem, 0.86vw, 0.84rem);
+    font-weight: 600;
+    line-height: 1.35;
+    text-align: center;
+}
+
+#Durae.jkb-ally-oem .jkb-ally-oem__contact {
+    width: min(460px, 100%);
+    margin: 0;
+    padding: clamp(8px, 1vw, 10px) clamp(10px, 1.2vw, 14px);
+    border-radius: 12px;
+    border: 1px solid rgba(214, 226, 243, 0.96);
+    background: rgba(255, 255, 255, 0.66);
+    display: grid;
+    gap: 2px;
+    text-align: left;
+    font-style: normal;
+}
+
+#Durae.jkb-ally-oem .jkb-ally-oem__contact p {
+    margin: 0;
+    color: #294973;
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(0.78rem, 0.84vw, 0.86rem);
+    line-height: 1.34;
+}
+
+#Durae.jkb-ally-oem .jkb-ally-oem__contact p span {
+    font-weight: 700;
+    color: #173b6d;
+}
+
+#Durae.jkb-ally-oem .jkb-ally-oem__contact a {
+    color: #1d4f96;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.22s ease, color 0.22s ease;
+}
+
+#Durae.jkb-ally-oem .jkb-ally-oem__contact a:hover,
+#Durae.jkb-ally-oem .jkb-ally-oem__contact a:focus-visible {
+    color: #163f7d;
+    border-bottom-color: rgba(22, 63, 125, 0.45);
+}
+
+#Durae.jkb-ally-oem .jkb-ally-oem__sep {
+    margin: 0 4px;
+    color: #45638d;
+    font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+    #Durae.jkb-ally-oem {
+        margin-top: clamp(18px, 3.8vw, 34px);
+    }
+}
+
+@media (max-width: 768px) {
+    #Durae.jkb-ally-oem {
+        margin-top: clamp(22px, 5.2vw, 36px);
+        padding: 8px 10px 14px;
+    }
+
+    #Durae.jkb-ally-oem .jkb-ally-oem__viewport {
+        width: min(700px, 96vw);
+        border-radius: 14px;
+        padding: 10px 10px 12px;
+        gap: 8px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    #Durae.jkb-ally-oem .jkb-ally-oem__head h2 {
+        font-size: clamp(0.96rem, 4.3vw, 1.2rem);
+        text-align: center;
+    }
+
+    #Durae.jkb-ally-oem .jkb-ally-oem__head {
+        justify-items: center;
+        text-align: center;
+    }
+
+    #Durae.jkb-ally-oem .jkb-ally-oem__eyebrow {
+        min-height: 24px;
+        font-size: 0.62rem;
+        letter-spacing: 0.06em;
+    }
+
+    #Durae.jkb-ally-oem .jkb-ally-oem__brand figcaption {
+        font-size: 0.78rem;
+    }
+
+    #Durae.jkb-ally-oem .jkb-ally-oem__contact p {
+        font-size: 0.78rem;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    #Durae.jkb-ally-oem .jkb-ally-oem__contact {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #Durae.jkb-ally-oem {
+        margin-top: 18px;
+    }
+
+    #Durae.jkb-ally-oem .jkb-ally-oem__logo-wrap {
+        width: min(246px, 100%);
+        border-radius: 10px;
+        padding: 6px;
+    }
+
+    #Durae.jkb-ally-oem .jkb-ally-oem__contact {
+        border-radius: 10px;
+        padding: 8px;
+    }
+}
+
+/* ====================================================== */
+/* JKB TYPOGRAPHY SYSTEM - GLOBAL UNIFICATION             */
+/* Base visual alineada con "Medios de pago"             */
+/* ====================================================== */
+:root {
+    --jk-font-display: "Poppins", sans-serif;
+    --jk-font-body: "Open Sans", sans-serif;
+    --jk-type-title: #1a2a4f;
+    --jk-type-subtitle: #2e4e7d;
+    --jk-type-body: #425b7f;
+    --jk-type-muted: #667d99;
+    --jk-type-link: #1f4f98;
+    --jk-type-heading-track: -0.24px;
+    --jk-type-body-track: 0;
+    --jk-type-tight: 1.1;
+    --jk-type-regular: 1.52;
+}
+
+body {
+    font-family: var(--jk-font-body);
+    color: var(--jk-type-body);
+    letter-spacing: var(--jk-type-body-track);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--jk-font-display);
+    letter-spacing: var(--jk-type-heading-track);
+    line-height: var(--jk-type-tight);
+    color: var(--jk-type-title);
+}
+
+p, li {
+    font-family: var(--jk-font-body);
+    line-height: var(--jk-type-regular);
+    letter-spacing: var(--jk-type-body-track);
+}
+
+.JK_Header nav a,
+.JK_Header .jk2025_menu a {
+    font-family: var(--jk-font-body);
+    font-size: clamp(0.84rem, 0.92vw, 0.97rem);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 1.25;
+    color: var(--jk-type-title);
+}
+
+.JK_Header nav a:hover,
+.JK_Header .jk2025_menu a:hover {
+    color: var(--jk-type-link);
+}
+
+.hero-split-final-title {
+    font-family: var(--jk-font-display) !important;
+    letter-spacing: var(--jk-type-heading-track) !important;
+    line-height: 1.12 !important;
+}
+
+.hero-split-final-texto-destacado,
+.hero-split-final-texto-secundario {
+    font-family: var(--jk-font-body) !important;
+    letter-spacing: 0 !important;
+    line-height: 1.52 !important;
+}
+
+.hero-split-final-texto-destacado {
+    color: var(--jk-type-subtitle) !important;
+    font-weight: 600 !important;
+}
+
+.hero-split-final-texto-secundario {
+    color: var(--jk-type-body) !important;
+    font-weight: 500 !important;
+}
+
+.hero-split-final-btn {
+    font-family: var(--jk-font-body) !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.01em !important;
+}
+
+.marcas-titulo,
+.almacen-txt h2,
+.equipo-comercial h2,
+.mensajeria-urbana__title,
+#payment_steps .compra-dos-final-center-title,
+.mando_titulo,
+.mando_titulo2 {
+    font-family: var(--jk-font-display);
+    color: var(--jk-type-title);
+    letter-spacing: var(--jk-type-heading-track);
+    line-height: 1.1;
+}
+
+.marcas-subtitulo,
+.almacen-txt p,
+.equipo-comercial__content p:not(.equipo-comercial__eyebrow),
+.mensajeria-urbana__lead,
+#payment_steps .compra-dos-final-paso p span,
+.mando_subtitulo {
+    font-family: var(--jk-font-body);
+    color: var(--jk-type-body);
+    letter-spacing: 0;
+    line-height: var(--jk-type-regular);
+}
+
+.marcas-atencion-label,
+.marcas-atencion-online strong,
+.marcas-atencion-btn,
+.equipo-comercial__btn,
+.mensajeria-urbana__btn,
+#payment_steps .compra-dos-final-header h2,
+#payment_steps .compra-dos-final-paso p,
+#payment_steps .compra-dos-final-check,
+.jkb-payments-oem__head h2,
+.jkb-payments-oem__panel h3,
+.jkb-payments-oem__contact-list a,
+.jkb-payments-oem__bank strong,
+.jkb-payments-oem__bank span,
+.jkb-payments-oem__bank b,
+.jkb-payments-oem__actions a,
+.f-nav-minimal a {
+    font-family: var(--jk-font-body);
+}
+
+#payment_steps .compra-dos-final-header h2 {
+    font-weight: 700;
+    color: var(--jk-type-subtitle);
+    letter-spacing: 0;
+    line-height: 1.3;
+}
+
+#payment_steps .compra-dos-final-paso p {
+    font-size: clamp(0.88rem, 0.96vw, 0.95rem);
+    font-weight: 700 !important;
+    color: #163764 !important;
+    line-height: 1.44;
+    letter-spacing: 0;
+}
+
+#payment_steps .compra-dos-final-paso p span {
+    font-size: clamp(0.8rem, 0.85vw, 0.88rem);
+    font-weight: 500 !important;
+    color: var(--jk-type-muted) !important;
+    line-height: 1.45;
+}
+
+#banner_pagos.jkb-payments-oem .jkb-payments-oem__head h2,
+#banner_pagos.jkb-payments-oem .jkb-payments-oem__protagonist {
+    font-family: var(--jk-font-display);
+    color: var(--jk-type-title);
+    letter-spacing: var(--jk-type-heading-track);
+}
+
+#banner_pagos.jkb-payments-oem .jkb-payments-oem__head p,
+#banner_pagos.jkb-payments-oem .jkb-payments-oem__panel p,
+#banner_pagos.jkb-payments-oem .jkb-payments-oem__assets figcaption {
+    font-family: var(--jk-font-body);
+    color: var(--jk-type-body);
+    line-height: 1.5;
+}
+
+.f-minimal-yellow,
+.f-sede-details li,
+.f-bottom-minimal,
+.f-email-link,
+.f-nav-minimal a {
+    font-family: var(--jk-font-body);
+}
+
+.f-sede-details li {
+    line-height: 1.35;
+    color: rgba(16, 34, 63, 0.84);
+}
+
+.f-nav-minimal a {
+    letter-spacing: 0.05em;
+}
+
+/* ====================================================== */
+/* JKB TYPOGRAPHY CALIBRATION - BREAKPOINT MICRO-TUNING   */
+/* ====================================================== */
+@media (min-width: 1280px) {
+    .JK_Header nav a,
+    .JK_Header .jk2025_menu a {
+        font-size: clamp(0.88rem, 0.86vw, 0.98rem);
+    }
+
+    .marcas-subtitulo,
+    .almacen-txt p,
+    .equipo-comercial__content p:not(.equipo-comercial__eyebrow),
+    .mensajeria-urbana__lead,
+    #payment_steps .compra-dos-final-paso p span {
+        font-size: clamp(0.9rem, 0.9vw, 0.98rem);
+    }
+}
+
+@media (max-width: 1025px) {
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1.14;
+    }
+
+    .marcas-titulo,
+    .almacen-txt h2,
+    .equipo-comercial h2,
+    .mensajeria-urbana__title,
+    #payment_steps .compra-dos-final-center-title,
+    .mando_titulo,
+    .mando_titulo2 {
+        letter-spacing: -0.2px;
+        line-height: 1.12;
+    }
+
+    .marcas-subtitulo,
+    .almacen-txt p,
+    .equipo-comercial__content p:not(.equipo-comercial__eyebrow),
+    .mensajeria-urbana__lead,
+    #payment_steps .compra-dos-final-paso p span,
+    .mando_subtitulo {
+        line-height: 1.5;
+    }
+
+    #payment_steps .compra-dos-final-paso p {
+        font-size: clamp(0.86rem, 2vw, 0.93rem);
+    }
+
+    #payment_steps .compra-dos-final-paso p span {
+        font-size: clamp(0.79rem, 1.9vw, 0.86rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .JK_Header nav a,
+    .JK_Header .jk2025_menu a {
+        font-size: 0.88rem;
+        line-height: 1.3;
+    }
+
+    .marcas-titulo,
+    .almacen-txt h2,
+    .equipo-comercial h2,
+    .mensajeria-urbana__title,
+    #payment_steps .compra-dos-final-center-title,
+    .mando_titulo,
+    .mando_titulo2 {
+        letter-spacing: -0.16px;
+        line-height: 1.14;
+    }
+
+    .marcas-subtitulo,
+    .almacen-txt p,
+    .equipo-comercial__content p:not(.equipo-comercial__eyebrow),
+    .mensajeria-urbana__lead,
+    #payment_steps .compra-dos-final-paso p span,
+    .mando_subtitulo {
+        font-size: 0.9rem;
+        line-height: 1.54;
+    }
+
+    #banner_pagos.jkb-payments-oem .jkb-payments-oem__head p,
+    #banner_pagos.jkb-payments-oem .jkb-payments-oem__panel p {
+        line-height: 1.52;
+    }
+}
+
+@media (max-width: 480px) {
+    .marcas-titulo,
+    .almacen-txt h2,
+    .equipo-comercial h2,
+    .mensajeria-urbana__title,
+    #payment_steps .compra-dos-final-center-title,
+    .mando_titulo,
+    .mando_titulo2 {
+        letter-spacing: -0.12px;
+    }
+
+    .marcas-subtitulo,
+    .almacen-txt p,
+    .equipo-comercial__content p:not(.equipo-comercial__eyebrow),
+    .mensajeria-urbana__lead,
+    #payment_steps .compra-dos-final-paso p span,
+    .mando_subtitulo {
+        font-size: 0.86rem;
+        line-height: 1.55;
+    }
+
+    .f-nav-minimal a {
+        font-size: 0.68rem;
     }
 }

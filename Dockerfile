@@ -1,6 +1,8 @@
 FROM php:8.2-apache
 
-RUN a2enmod rewrite headers
+RUN a2enmod rewrite headers \
+    && (a2dismod -f mpm_event mpm_worker || true) \
+    && a2enmod mpm_prefork
 
 # Permite usar .htaccess (rewrites, canonical, 404)
 RUN sed -ri 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf

@@ -2,11 +2,13 @@
 RewriteEngine On
 RewriteBase /
 
-# Canonical de host (www)
+# Canonical de host (www), excepto dominio temporal de Railway
+RewriteCond %{HTTP_HOST} !\.up\.railway\.app$ [NC]
 RewriteCond %{HTTP_HOST} !^www\.japonkoreabogota\.com$ [NC]
 RewriteRule ^ https://www.japonkoreabogota.com%{REQUEST_URI} [L,R=301]
 
-# Canonical de protocolo (compatible con reverse proxy como Railway)
+# Canonical de protocolo (compatible con reverse proxy), excepto Railway preview
+RewriteCond %{HTTP_HOST} !\.up\.railway\.app$ [NC]
 RewriteCond %{HTTPS} !=on
 RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
 RewriteRule ^ https://www.japonkoreabogota.com%{REQUEST_URI} [L,R=301]
